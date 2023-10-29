@@ -1,7 +1,5 @@
 import streamlit as st
 from streamlit.components.v1 import iframe
-import subprocess
-import sys
 
 def app(title=None)-> None:
     """Creates the streamlit app
