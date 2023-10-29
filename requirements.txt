@@ -2,3 +2,4 @@ streamlit
 explainerdashboard
 pandas
 scikit-learn
+streamlit-server-state
