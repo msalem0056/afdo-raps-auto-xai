@@ -1,8 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as components
 import sys
-from streamlit_server_state import server_state, server_state_lock, no_rerun
-
 
 
 def app(title=None)-> None:
@@ -13,7 +11,10 @@ def app(title=None)-> None:
     """
     st.set_page_config(layout="wide")
     st.title('ExplainerDashboard')
-    st.markdown("### Developer: Mike Salem [Linked In](https://www.linkedin.com/in/mike-salem)")
+    col1, col2, col3 = st.columns([0.03,.003,.1])
+    col1.markdown("### Developer: Mike Salem")
+    col2.image("LI-In-Bug.jpg", width=48)
+    col3.markdown("### [LinkedIn](https://www.linkedin.com/in/mike-salem/)")    
     st.write("The following is an example showcasing XAI using explainer dashboard and streamlit. The `what-if` section allows users to explore different answers for given / new instances. If the box belows says `unable to connect` please click `try again` and wait for it to refresh")
     tab_files = ["./explainerhub/dashboard1.html", "./explainerhub/dashboard2.html",]
     t1, t2 = st.tabs(['Breast Cancer Dataset', 'Diabetes Dataset'])
