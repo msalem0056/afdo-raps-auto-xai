@@ -22,7 +22,6 @@ def app(title=None)-> None:
         with tab:
             HtmlFile = open(name, 'r', encoding='utf-8')
             source_code = HtmlFile.read() 
-            print(source_code)
             components.html(source_code, height = 900, width = None, scrolling=True)
 
 # Render the ExplainerDashboard in the Streamlit app
