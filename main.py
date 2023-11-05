@@ -1,8 +1,8 @@
 import streamlit as st
-from streamlit.components.v1 import iframe
-import subprocess
+import streamlit.components.v1 as components
 import sys
 from streamlit_server_state import server_state, server_state_lock, no_rerun
+
 
 
 def app(title=None)-> None:
@@ -11,18 +11,18 @@ def app(title=None)-> None:
     Args:
         title (string, optional): The App name. Defaults to None.
     """
+    st.set_page_config(layout="wide")
     st.title('ExplainerDashboard')
-    st.write("Developer: Mike Salem")
+    st.markdown("### Developer: Mike Salem [Linked In](https://www.linkedin.com/in/mike-salem)")
     st.write("The following is an example showcasing XAI using explainer dashboard and streamlit. The `what-if` section allows users to explore different answers for given / new instances. If the box belows says `unable to connect` please click `try again` and wait for it to refresh")
-    st.components.v1.iframe("http://127.0.0.1:8050", width=None, height=900, scrolling=True)
-    if "ed" not in server_state:
-        with no_rerun:
-            subprocess.run([f"{sys.executable}", "explainer-dashboard.py"]) #for streamlit  # This does not trigger re-running of other sessions
-            server_state.ed = True    
-    # if not st.session_state['started']:
-    #     #subprocess.run(["python", "explainer-dashboard.py", "&"]) 
-    #     subprocess.run([f"{sys.executable}", "explainer-dashboard.py"]) #for streamlit
-    #     st.session_state['started'] = True      
+    tab_files = ["./explainerhub/dashboard1.html", "./explainerhub/dashboard2.html",]
+    t1, t2 = st.tabs(['Breast Cancer Dataset', 'Diabetes Dataset'])
+    for tab,name in zip([t1,t2], tab_files):
+        with tab:
+            HtmlFile = open(name, 'r', encoding='utf-8')
+            source_code = HtmlFile.read() 
+            print(source_code)
+            components.html(source_code, height = 900, width = None, scrolling=True)
 
 # Render the ExplainerDashboard in the Streamlit app
 if __name__ == "__main__":

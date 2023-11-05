@@ -1,0 +1,947 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>explainerdashboard</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+<div><H1>Diabetes Explainer</H1></div><ul class="nav nav-tabs" id="myTab" role="tablist">
+<li class="nav-item" role="presentation">
+    <button class="nav-link active" id="myTab0-tab"
+    data-bs-toggle="tab" type="button" data-bs-target="#myTab0" role="tab"
+    aria-selected="true" aria-controls="myTab0">Feature Importances</button>
+</li>
+
+<li class="nav-item" role="presentation">
+    <button class="nav-link" id="myTab1-tab"
+    data-bs-toggle="tab" type="button" data-bs-target="#myTab1" role="tab"
+    aria-selected="false" aria-controls="myTab1">Regression Stats</button>
+</li>
+
+<li class="nav-item" role="presentation">
+    <button class="nav-link" id="myTab2-tab"
+    data-bs-toggle="tab" type="button" data-bs-target="#myTab2" role="tab"
+    aria-selected="false" aria-controls="myTab2">Individual Predictions</button>
+</li>
+
+<li class="nav-item" role="presentation">
+    <button class="nav-link" id="myTab3-tab"
+    data-bs-toggle="tab" type="button" data-bs-target="#myTab3" role="tab"
+    aria-selected="false" aria-controls="myTab3">What if...</button>
+</li>
+
+<li class="nav-item" role="presentation">
+    <button class="nav-link" id="myTab4-tab"
+    data-bs-toggle="tab" type="button" data-bs-target="#myTab4" role="tab"
+    aria-selected="false" aria-controls="myTab4">Feature Dependence</button>
+</li>
+
+<li class="nav-item" role="presentation">
+    <button class="nav-link" id="myTab5-tab"
+    data-bs-toggle="tab" type="button" data-bs-target="#myTab5" role="tab"
+    aria-selected="false" aria-controls="myTab5">Feature Interactions</button>
+</li>
+
+<li class="nav-item" role="presentation">
+    <button class="nav-link" id="myTab6-tab"
+    data-bs-toggle="tab" type="button" data-bs-target="#myTab6" role="tab"
+    aria-selected="false" aria-controls="myTab6">Decision Trees</button>
+</li>
+
+</ul>
+
+<div class="tab-content" id="myTabContent">
+
+
+<div class="tab-pane active" id="myTab0"
+     role="tabpanel" aria-labelledby="myTab0-tab"> <div></div>
+<div>
+    <div>
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="row row-cols-1 g-4" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Feature Importances</h3></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.25.2.min.js"></script>                <div id="349add65-3ef4-4b66-abdd-7cce83124c48" class="plotly-graph-div" style="height:400px; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("349add65-3ef4-4b66-abdd-7cce83124c48")) {                    Plotly.newPlot(                        "349add65-3ef4-4b66-abdd-7cce83124c48",                        [{"hoverinfo":"text","orientation":"h","x":[2.176986780670979,2.2116806367790396,2.383782427459061,2.6353848089120144,3.7625861201654645,4.04397390799058,4.267195523997213,7.598715516296599,23.714497276422602,28.125855616148534],"y":["10. s2","9. sex","8. s4","7. s1","6. s6","5. age","4. s3","3. bp","2. s5","1. bmi"],"type":"bar"}],                        {"plot_bgcolor":"#fff","showlegend":false,"title":{"text":"Average impact on predicted target\u003cbr\u003e(mean absolute SHAP value)"},"template":{"data":{"scatter":[{"type":"scatter"}]}},"yaxis":{"automargin":true},"xaxis":{"automargin":true,"title":{"text":""}},"height":400,"margin":{"b":40,"l":21,"pad":4,"r":40,"t":40}},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+</div> 
+    
+</div>
+        
+</div> 
+        </div><div>
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="row row-cols-1 g-4" style="margin-top: 20px;">
+    
+<div class="col">
+<div></div>
+</div>
+        
+</div> 
+    
+</div>
+        
+</div> 
+    
+    </div>
+</div>
+    
+</div>
+
+<div class="tab-pane " id="myTab1"
+     role="tabpanel" aria-labelledby="myTab1-tab"> <div></div>
+<div>
+    <div>
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="row row-cols-2 g-4" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Model Summary</h3></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">metric</th>
+      <th scope="col">Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mean-squared-error</td>
+      <td>2952.011</td>
+    </tr>
+    <tr>
+      <td>root-mean-squared-error</td>
+      <td>54.332</td>
+    </tr>
+    <tr>
+      <td>mean-absolute-error</td>
+      <td>44.053</td>
+    </tr>
+    <tr>
+      <td>mean-absolute-percentage-error</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>R-squared</td>
+      <td>0.443</td>
+    </tr>
+
+  </tbody>
+</table>
+    
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Predicted vs Actual</h3></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.25.2.min.js"></script>                <div id="47aafb72-6028-49ea-ba5f-8d781145c427" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("47aafb72-6028-49ea-ba5f-8d781145c427")) {                    Plotly.newPlot(                        "47aafb72-6028-49ea-ba5f-8d781145c427",                        [{"hoverinfo":"text","mode":"markers","name":"","text":["Index: 287\u003cbr\u003eObserved: 219.000\u003cbr\u003ePrediction: 144.000","Index: 211\u003cbr\u003eObserved: 70.000\u003cbr\u003ePrediction: 171.580","Index: 72\u003cbr\u003eObserved: 202.000\u003cbr\u003ePrediction: 150.720","Index: 321\u003cbr\u003eObserved: 230.000\u003cbr\u003ePrediction: 253.710","Index: 73\u003cbr\u003eObserved: 111.000\u003cbr\u003ePrediction: 107.190","Index: 418\u003cbr\u003eObserved: 84.000\u003cbr\u003ePrediction: 123.540","Index: 367\u003cbr\u003eObserved: 242.000\u003cbr\u003ePrediction: 239.090","Index: 354\u003cbr\u003eObserved: 272.000\u003cbr\u003ePrediction: 219.010","Index: 281\u003cbr\u003eObserved: 94.000\u003cbr\u003ePrediction: 153.440","Index: 148\u003cbr\u003eObserved: 96.000\u003cbr\u003ePrediction: 184.590","Index: 429\u003cbr\u003eObserved: 94.000\u003cbr\u003ePrediction: 103.270","Index: 78\u003cbr\u003eObserved: 252.000\u003cbr\u003ePrediction: 185.320","Index: 126\u003cbr\u003eObserved: 99.000\u003cbr\u003ePrediction: 91.890","Index: 113\u003cbr\u003eObserved: 297.000\u003cbr\u003ePrediction: 236.980","Index: 329\u003cbr\u003eObserved: 135.000\u003cbr\u003ePrediction: 85.590","Index: 427\u003cbr\u003eObserved: 67.000\u003cbr\u003ePrediction: 139.260","Index: 172\u003cbr\u003eObserved: 295.000\u003cbr\u003ePrediction: 241.740","Index: 268\u003cbr\u003eObserved: 264.000\u003cbr\u003ePrediction: 261.980","Index: 76\u003cbr\u003eObserved: 170.000\u003cbr\u003ePrediction: 167.060","Index: 116\u003cbr\u003eObserved: 275.000\u003cbr\u003ePrediction: 221.730","Index: 9\u003cbr\u003eObserved: 310.000\u003cbr\u003ePrediction: 156.630","Index: 181\u003cbr\u003eObserved: 64.000\u003cbr\u003ePrediction: 113.620","Index: 55\u003cbr\u003eObserved: 128.000\u003cbr\u003ePrediction: 75.130","Index: 399\u003cbr\u003eObserved: 232.000\u003cbr\u003ePrediction: 198.490","Index: 30\u003cbr\u003eObserved: 129.000\u003cbr\u003ePrediction: 139.900","Index: 140\u003cbr\u003eObserved: 118.000\u003cbr\u003ePrediction: 176.870","Index: 341\u003cbr\u003eObserved: 263.000\u003cbr\u003ePrediction: 194.250","Index: 209\u003cbr\u003eObserved: 77.000\u003cbr\u003ePrediction: 159.200","Index: 436\u003cbr\u003eObserved: 48.000\u003cbr\u003ePrediction: 73.150","Index: 132\u003cbr\u003eObserved: 107.000\u003cbr\u003ePrediction: 112.090","Index: 407\u003cbr\u003eObserved: 140.000\u003cbr\u003ePrediction: 166.870","Index: 79\u003cbr\u003eObserved: 113.000\u003cbr\u003ePrediction: 100.910","Index: 39\u003cbr\u003eObserved: 90.000\u003cbr\u003ePrediction: 182.620","Index: 333\u003cbr\u003eObserved: 164.000\u003cbr\u003ePrediction: 207.630","Index: 311\u003cbr\u003eObserved: 180.000\u003cbr\u003ePrediction: 159.570","Index: 422\u003cbr\u003eObserved: 233.000\u003cbr\u003ePrediction: 204.450","Index: 75\u003cbr\u003eObserved: 42.000\u003cbr\u003ePrediction: 104.140","Index: 157\u003cbr\u003eObserved: 84.000\u003cbr\u003ePrediction: 113.150","Index: 307\u003cbr\u003eObserved: 172.000\u003cbr\u003ePrediction: 176.290","Index: 370\u003cbr\u003eObserved: 63.000\u003cbr\u003ePrediction: 76.960","Index: 70\u003cbr\u003eObserved: 48.000\u003cbr\u003ePrediction: 76.730","Index: 227\u003cbr\u003eObserved: 108.000\u003cbr\u003ePrediction: 95.140","Index: 284\u003cbr\u003eObserved: 156.000\u003cbr\u003ePrediction: 168.260","Index: 402\u003cbr\u003eObserved: 168.000\u003cbr\u003ePrediction: 156.120","Index: 199\u003cbr\u003eObserved: 90.000\u003cbr\u003ePrediction: 167.280","Index: 82\u003cbr\u003eObserved: 52.000\u003cbr\u003ePrediction: 84.980","Index: 77\u003cbr\u003eObserved: 200.000\u003cbr\u003ePrediction: 74.320","Index: 33\u003cbr\u003eObserved: 87.000\u003cbr\u003ePrediction: 123.170","Index: 358\u003cbr\u003eObserved: 90.000\u003cbr\u003ePrediction: 76.750","Index: 395\u003cbr\u003eObserved: 258.000\u003cbr\u003ePrediction: 162.770","Index: 411\u003cbr\u003eObserved: 136.000\u003cbr\u003ePrediction: 104.820","Index: 131\u003cbr\u003eObserved: 158.000\u003cbr\u003ePrediction: 88.740","Index: 11\u003cbr\u003eObserved: 69.000\u003cbr\u003ePrediction: 178.420","Index: 386\u003cbr\u003eObserved: 72.000\u003cbr\u003ePrediction: 117.310","Index: 15\u003cbr\u003eObserved: 171.000\u003cbr\u003ePrediction: 189.340","Index: 104\u003cbr\u003eObserved: 95.000\u003cbr\u003ePrediction: 140.620","Index: 196\u003cbr\u003eObserved: 72.000\u003cbr\u003ePrediction: 102.410","Index: 0\u003cbr\u003eObserved: 151.000\u003cbr\u003ePrediction: 224.090","Index: 19\u003cbr\u003eObserved: 168.000\u003cbr\u003ePrediction: 92.630","Index: 286\u003cbr\u003eObserved: 60.000\u003cbr\u003ePrediction: 88.030","Index: 320\u003cbr\u003eObserved: 122.000\u003cbr\u003ePrediction: 157.840","Index: 56\u003cbr\u003eObserved: 52.000\u003cbr\u003ePrediction: 170.340","Index: 244\u003cbr\u003eObserved: 187.000\u003cbr\u003ePrediction: 141.440","Index: 101\u003cbr\u003eObserved: 102.000\u003cbr\u003ePrediction: 101.540","Index: 218\u003cbr\u003eObserved: 214.000\u003cbr\u003ePrediction: 132.920","Index: 291\u003cbr\u003eObserved: 248.000\u003cbr\u003ePrediction: 227.330","Index: 409\u003cbr\u003eObserved: 181.000\u003cbr\u003ePrediction: 183.720","Index: 388\u003cbr\u003eObserved: 110.000\u003cbr\u003ePrediction: 178.320","Index: 374\u003cbr\u003eObserved: 140.000\u003cbr\u003ePrediction: 145.880","Index: 25\u003cbr\u003eObserved: 202.000\u003cbr\u003ePrediction: 151.790","Index: 185\u003cbr\u003eObserved: 101.000\u003cbr\u003ePrediction: 185.020","Index: 203\u003cbr\u003eObserved: 222.000\u003cbr\u003ePrediction: 193.130","Index: 117\u003cbr\u003eObserved: 281.000\u003cbr\u003ePrediction: 211.460","Index: 42\u003cbr\u003eObserved: 61.000\u003cbr\u003ePrediction: 109.860","Index: 296\u003cbr\u003eObserved: 89.000\u003cbr\u003ePrediction: 80.110","Index: 423\u003cbr\u003eObserved: 91.000\u003cbr\u003ePrediction: 158.080","Index: 155\u003cbr\u003eObserved: 186.000\u003cbr\u003ePrediction: 211.580","Index: 440\u003cbr\u003eObserved: 220.000\u003cbr\u003ePrediction: 165.560","Index: 176\u003cbr\u003eObserved: 237.000\u003cbr\u003ePrediction: 186.470","Index: 285\u003cbr\u003eObserved: 233.000\u003cbr\u003ePrediction: 203.630","Index: 22\u003cbr\u003eObserved: 68.000\u003cbr\u003ePrediction: 96.420","Index: 46\u003cbr\u003eObserved: 190.000\u003cbr\u003ePrediction: 117.940","Index: 93\u003cbr\u003eObserved: 96.000\u003cbr\u003ePrediction: 81.380","Index: 433\u003cbr\u003eObserved: 72.000\u003cbr\u003ePrediction: 75.740","Index: 255\u003cbr\u003eObserved: 153.000\u003cbr\u003ePrediction: 84.910","Index: 90\u003cbr\u003eObserved: 98.000\u003cbr\u003ePrediction: 74.880","Index: 57\u003cbr\u003eObserved: 37.000\u003cbr\u003ePrediction: 91.540","Index: 391\u003cbr\u003eObserved: 63.000\u003cbr\u003ePrediction: 76.010","Index: 24\u003cbr\u003eObserved: 184.000\u003cbr\u003ePrediction: 158.640"],"x":[219.0,70.0,202.0,230.0,111.0,84.0,242.0,272.0,94.0,96.0,94.0,252.0,99.0,297.0,135.0,67.0,295.0,264.0,170.0,275.0,310.0,64.0,128.0,232.0,129.0,118.0,263.0,77.0,48.0,107.0,140.0,113.0,90.0,164.0,180.0,233.0,42.0,84.0,172.0,63.0,48.0,108.0,156.0,168.0,90.0,52.0,200.0,87.0,90.0,258.0,136.0,158.0,69.0,72.0,171.0,95.0,72.0,151.0,168.0,60.0,122.0,52.0,187.0,102.0,214.0,248.0,181.0,110.0,140.0,202.0,101.0,222.0,281.0,61.0,89.0,91.0,186.0,220.0,237.0,233.0,68.0,190.0,96.0,72.0,153.0,98.0,37.0,63.0,184.0],"y":[144.0,171.58,150.72,253.71,107.19,123.54,239.09,219.01,153.44,184.59,103.27,185.32,91.89,236.98,85.59,139.26,241.74,261.98,167.06,221.73,156.63,113.62,75.13,198.49,139.9,176.87,194.25,159.2,73.15,112.09,166.87,100.91,182.62,207.63,159.57,204.45,104.14,113.15,176.29,76.96,76.73,95.14,168.26,156.12,167.28,84.98,74.32,123.17,76.75,162.77,104.82,88.74,178.42,117.31,189.34,140.62,102.41,224.09,92.63,88.03,157.84,170.34,141.44,101.54,132.92,227.33,183.72,178.32,145.88,151.79,185.02,193.13,211.46,109.86,80.11,158.08,211.58,165.56,186.47,203.63,96.42,117.94,81.38,75.74,84.91,74.88,91.54,76.01,158.64],"type":"scattergl"},{"hoverinfo":"none","mode":"lines","name":"","x":[37.0,42.0,48.0,48.0,52.0,52.0,60.0,61.0,63.0,63.0,64.0,67.0,68.0,69.0,70.0,72.0,72.0,72.0,77.0,84.0,84.0,87.0,89.0,90.0,90.0,90.0,91.0,94.0,94.0,95.0,96.0,96.0,98.0,99.0,101.0,102.0,107.0,108.0,110.0,111.0,113.0,118.0,122.0,128.0,129.0,135.0,136.0,140.0,140.0,151.0,153.0,156.0,158.0,164.0,168.0,168.0,170.0,171.0,172.0,180.0,181.0,184.0,186.0,187.0,190.0,200.0,202.0,202.0,214.0,219.0,220.0,222.0,230.0,232.0,233.0,233.0,237.0,242.0,248.0,252.0,258.0,263.0,264.0,272.0,275.0,281.0,295.0,297.0,310.0],"y":[37.0,42.0,48.0,48.0,52.0,52.0,60.0,61.0,63.0,63.0,64.0,67.0,68.0,69.0,70.0,72.0,72.0,72.0,77.0,84.0,84.0,87.0,89.0,90.0,90.0,90.0,91.0,94.0,94.0,95.0,96.0,96.0,98.0,99.0,101.0,102.0,107.0,108.0,110.0,111.0,113.0,118.0,122.0,128.0,129.0,135.0,136.0,140.0,140.0,151.0,153.0,156.0,158.0,164.0,168.0,168.0,170.0,171.0,172.0,180.0,181.0,184.0,186.0,187.0,190.0,200.0,202.0,202.0,214.0,219.0,220.0,222.0,230.0,232.0,233.0,233.0,237.0,242.0,248.0,252.0,258.0,263.0,264.0,272.0,275.0,281.0,295.0,297.0,310.0],"type":"scattergl"}],                        {"hovermode":"closest","plot_bgcolor":"#fff","title":{"text":"Predicted target vs Observed target"},"xaxis":{"title":{"text":"Observed target"}},"yaxis":{"title":{"text":"Predicted target"}},"template":{"data":{"scatter":[{"type":"scatter"}]}},"margin":{"t":40,"b":40,"l":40,"r":40}},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+</div> 
+    
+</div>
+        
+</div> 
+        </div><div>
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="row row-cols-2 g-4" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Residuals</h3></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.25.2.min.js"></script>                <div id="d7159976-1486-4ef9-a9ff-71d598329cf6" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("d7159976-1486-4ef9-a9ff-71d598329cf6")) {                    Plotly.newPlot(                        "d7159976-1486-4ef9-a9ff-71d598329cf6",                        [{"hoverinfo":"text","mode":"markers","name":"residuals (y-preds)","text":["Index: 287\u003cbr\u003eObserved: 219.000\u003cbr\u003ePrediction: 144.000\u003cbr\u003eResidual: 75.000","Index: 211\u003cbr\u003eObserved: 70.000\u003cbr\u003ePrediction: 171.580\u003cbr\u003eResidual: -101.580","Index: 72\u003cbr\u003eObserved: 202.000\u003cbr\u003ePrediction: 150.720\u003cbr\u003eResidual: 51.280","Index: 321\u003cbr\u003eObserved: 230.000\u003cbr\u003ePrediction: 253.710\u003cbr\u003eResidual: -23.710","Index: 73\u003cbr\u003eObserved: 111.000\u003cbr\u003ePrediction: 107.190\u003cbr\u003eResidual: 3.810","Index: 418\u003cbr\u003eObserved: 84.000\u003cbr\u003ePrediction: 123.540\u003cbr\u003eResidual: -39.540","Index: 367\u003cbr\u003eObserved: 242.000\u003cbr\u003ePrediction: 239.090\u003cbr\u003eResidual: 2.910","Index: 354\u003cbr\u003eObserved: 272.000\u003cbr\u003ePrediction: 219.010\u003cbr\u003eResidual: 52.990","Index: 281\u003cbr\u003eObserved: 94.000\u003cbr\u003ePrediction: 153.440\u003cbr\u003eResidual: -59.440","Index: 148\u003cbr\u003eObserved: 96.000\u003cbr\u003ePrediction: 184.590\u003cbr\u003eResidual: -88.590","Index: 429\u003cbr\u003eObserved: 94.000\u003cbr\u003ePrediction: 103.270\u003cbr\u003eResidual: -9.270","Index: 78\u003cbr\u003eObserved: 252.000\u003cbr\u003ePrediction: 185.320\u003cbr\u003eResidual: 66.680","Index: 126\u003cbr\u003eObserved: 99.000\u003cbr\u003ePrediction: 91.890\u003cbr\u003eResidual: 7.110","Index: 113\u003cbr\u003eObserved: 297.000\u003cbr\u003ePrediction: 236.980\u003cbr\u003eResidual: 60.020","Index: 329\u003cbr\u003eObserved: 135.000\u003cbr\u003ePrediction: 85.590\u003cbr\u003eResidual: 49.410","Index: 427\u003cbr\u003eObserved: 67.000\u003cbr\u003ePrediction: 139.260\u003cbr\u003eResidual: -72.260","Index: 172\u003cbr\u003eObserved: 295.000\u003cbr\u003ePrediction: 241.740\u003cbr\u003eResidual: 53.260","Index: 268\u003cbr\u003eObserved: 264.000\u003cbr\u003ePrediction: 261.980\u003cbr\u003eResidual: 2.020","Index: 76\u003cbr\u003eObserved: 170.000\u003cbr\u003ePrediction: 167.060\u003cbr\u003eResidual: 2.940","Index: 116\u003cbr\u003eObserved: 275.000\u003cbr\u003ePrediction: 221.730\u003cbr\u003eResidual: 53.270","Index: 9\u003cbr\u003eObserved: 310.000\u003cbr\u003ePrediction: 156.630\u003cbr\u003eResidual: 153.370","Index: 181\u003cbr\u003eObserved: 64.000\u003cbr\u003ePrediction: 113.620\u003cbr\u003eResidual: -49.620","Index: 55\u003cbr\u003eObserved: 128.000\u003cbr\u003ePrediction: 75.130\u003cbr\u003eResidual: 52.870","Index: 399\u003cbr\u003eObserved: 232.000\u003cbr\u003ePrediction: 198.490\u003cbr\u003eResidual: 33.510","Index: 30\u003cbr\u003eObserved: 129.000\u003cbr\u003ePrediction: 139.900\u003cbr\u003eResidual: -10.900","Index: 140\u003cbr\u003eObserved: 118.000\u003cbr\u003ePrediction: 176.870\u003cbr\u003eResidual: -58.870","Index: 341\u003cbr\u003eObserved: 263.000\u003cbr\u003ePrediction: 194.250\u003cbr\u003eResidual: 68.750","Index: 209\u003cbr\u003eObserved: 77.000\u003cbr\u003ePrediction: 159.200\u003cbr\u003eResidual: -82.200","Index: 436\u003cbr\u003eObserved: 48.000\u003cbr\u003ePrediction: 73.150\u003cbr\u003eResidual: -25.150","Index: 132\u003cbr\u003eObserved: 107.000\u003cbr\u003ePrediction: 112.090\u003cbr\u003eResidual: -5.090","Index: 407\u003cbr\u003eObserved: 140.000\u003cbr\u003ePrediction: 166.870\u003cbr\u003eResidual: -26.870","Index: 79\u003cbr\u003eObserved: 113.000\u003cbr\u003ePrediction: 100.910\u003cbr\u003eResidual: 12.090","Index: 39\u003cbr\u003eObserved: 90.000\u003cbr\u003ePrediction: 182.620\u003cbr\u003eResidual: -92.620","Index: 333\u003cbr\u003eObserved: 164.000\u003cbr\u003ePrediction: 207.630\u003cbr\u003eResidual: -43.630","Index: 311\u003cbr\u003eObserved: 180.000\u003cbr\u003ePrediction: 159.570\u003cbr\u003eResidual: 20.430","Index: 422\u003cbr\u003eObserved: 233.000\u003cbr\u003ePrediction: 204.450\u003cbr\u003eResidual: 28.550","Index: 75\u003cbr\u003eObserved: 42.000\u003cbr\u003ePrediction: 104.140\u003cbr\u003eResidual: -62.140","Index: 157\u003cbr\u003eObserved: 84.000\u003cbr\u003ePrediction: 113.150\u003cbr\u003eResidual: -29.150","Index: 307\u003cbr\u003eObserved: 172.000\u003cbr\u003ePrediction: 176.290\u003cbr\u003eResidual: -4.290","Index: 370\u003cbr\u003eObserved: 63.000\u003cbr\u003ePrediction: 76.960\u003cbr\u003eResidual: -13.960","Index: 70\u003cbr\u003eObserved: 48.000\u003cbr\u003ePrediction: 76.730\u003cbr\u003eResidual: -28.730","Index: 227\u003cbr\u003eObserved: 108.000\u003cbr\u003ePrediction: 95.140\u003cbr\u003eResidual: 12.860","Index: 284\u003cbr\u003eObserved: 156.000\u003cbr\u003ePrediction: 168.260\u003cbr\u003eResidual: -12.260","Index: 402\u003cbr\u003eObserved: 168.000\u003cbr\u003ePrediction: 156.120\u003cbr\u003eResidual: 11.880","Index: 199\u003cbr\u003eObserved: 90.000\u003cbr\u003ePrediction: 167.280\u003cbr\u003eResidual: -77.280","Index: 82\u003cbr\u003eObserved: 52.000\u003cbr\u003ePrediction: 84.980\u003cbr\u003eResidual: -32.980","Index: 77\u003cbr\u003eObserved: 200.000\u003cbr\u003ePrediction: 74.320\u003cbr\u003eResidual: 125.680","Index: 33\u003cbr\u003eObserved: 87.000\u003cbr\u003ePrediction: 123.170\u003cbr\u003eResidual: -36.170","Index: 358\u003cbr\u003eObserved: 90.000\u003cbr\u003ePrediction: 76.750\u003cbr\u003eResidual: 13.250","Index: 395\u003cbr\u003eObserved: 258.000\u003cbr\u003ePrediction: 162.770\u003cbr\u003eResidual: 95.230","Index: 411\u003cbr\u003eObserved: 136.000\u003cbr\u003ePrediction: 104.820\u003cbr\u003eResidual: 31.180","Index: 131\u003cbr\u003eObserved: 158.000\u003cbr\u003ePrediction: 88.740\u003cbr\u003eResidual: 69.260","Index: 11\u003cbr\u003eObserved: 69.000\u003cbr\u003ePrediction: 178.420\u003cbr\u003eResidual: -109.420","Index: 386\u003cbr\u003eObserved: 72.000\u003cbr\u003ePrediction: 117.310\u003cbr\u003eResidual: -45.310","Index: 15\u003cbr\u003eObserved: 171.000\u003cbr\u003ePrediction: 189.340\u003cbr\u003eResidual: -18.340","Index: 104\u003cbr\u003eObserved: 95.000\u003cbr\u003ePrediction: 140.620\u003cbr\u003eResidual: -45.620","Index: 196\u003cbr\u003eObserved: 72.000\u003cbr\u003ePrediction: 102.410\u003cbr\u003eResidual: -30.410","Index: 0\u003cbr\u003eObserved: 151.000\u003cbr\u003ePrediction: 224.090\u003cbr\u003eResidual: -73.090","Index: 19\u003cbr\u003eObserved: 168.000\u003cbr\u003ePrediction: 92.630\u003cbr\u003eResidual: 75.370","Index: 286\u003cbr\u003eObserved: 60.000\u003cbr\u003ePrediction: 88.030\u003cbr\u003eResidual: -28.030","Index: 320\u003cbr\u003eObserved: 122.000\u003cbr\u003ePrediction: 157.840\u003cbr\u003eResidual: -35.840","Index: 56\u003cbr\u003eObserved: 52.000\u003cbr\u003ePrediction: 170.340\u003cbr\u003eResidual: -118.340","Index: 244\u003cbr\u003eObserved: 187.000\u003cbr\u003ePrediction: 141.440\u003cbr\u003eResidual: 45.560","Index: 101\u003cbr\u003eObserved: 102.000\u003cbr\u003ePrediction: 101.540\u003cbr\u003eResidual: 0.460","Index: 218\u003cbr\u003eObserved: 214.000\u003cbr\u003ePrediction: 132.920\u003cbr\u003eResidual: 81.080","Index: 291\u003cbr\u003eObserved: 248.000\u003cbr\u003ePrediction: 227.330\u003cbr\u003eResidual: 20.670","Index: 409\u003cbr\u003eObserved: 181.000\u003cbr\u003ePrediction: 183.720\u003cbr\u003eResidual: -2.720","Index: 388\u003cbr\u003eObserved: 110.000\u003cbr\u003ePrediction: 178.320\u003cbr\u003eResidual: -68.320","Index: 374\u003cbr\u003eObserved: 140.000\u003cbr\u003ePrediction: 145.880\u003cbr\u003eResidual: -5.880","Index: 25\u003cbr\u003eObserved: 202.000\u003cbr\u003ePrediction: 151.790\u003cbr\u003eResidual: 50.210","Index: 185\u003cbr\u003eObserved: 101.000\u003cbr\u003ePrediction: 185.020\u003cbr\u003eResidual: -84.020","Index: 203\u003cbr\u003eObserved: 222.000\u003cbr\u003ePrediction: 193.130\u003cbr\u003eResidual: 28.870","Index: 117\u003cbr\u003eObserved: 281.000\u003cbr\u003ePrediction: 211.460\u003cbr\u003eResidual: 69.540","Index: 42\u003cbr\u003eObserved: 61.000\u003cbr\u003ePrediction: 109.860\u003cbr\u003eResidual: -48.860","Index: 296\u003cbr\u003eObserved: 89.000\u003cbr\u003ePrediction: 80.110\u003cbr\u003eResidual: 8.890","Index: 423\u003cbr\u003eObserved: 91.000\u003cbr\u003ePrediction: 158.080\u003cbr\u003eResidual: -67.080","Index: 155\u003cbr\u003eObserved: 186.000\u003cbr\u003ePrediction: 211.580\u003cbr\u003eResidual: -25.580","Index: 440\u003cbr\u003eObserved: 220.000\u003cbr\u003ePrediction: 165.560\u003cbr\u003eResidual: 54.440","Index: 176\u003cbr\u003eObserved: 237.000\u003cbr\u003ePrediction: 186.470\u003cbr\u003eResidual: 50.530","Index: 285\u003cbr\u003eObserved: 233.000\u003cbr\u003ePrediction: 203.630\u003cbr\u003eResidual: 29.370","Index: 22\u003cbr\u003eObserved: 68.000\u003cbr\u003ePrediction: 96.420\u003cbr\u003eResidual: -28.420","Index: 46\u003cbr\u003eObserved: 190.000\u003cbr\u003ePrediction: 117.940\u003cbr\u003eResidual: 72.060","Index: 93\u003cbr\u003eObserved: 96.000\u003cbr\u003ePrediction: 81.380\u003cbr\u003eResidual: 14.620","Index: 433\u003cbr\u003eObserved: 72.000\u003cbr\u003ePrediction: 75.740\u003cbr\u003eResidual: -3.740","Index: 255\u003cbr\u003eObserved: 153.000\u003cbr\u003ePrediction: 84.910\u003cbr\u003eResidual: 68.090","Index: 90\u003cbr\u003eObserved: 98.000\u003cbr\u003ePrediction: 74.880\u003cbr\u003eResidual: 23.120","Index: 57\u003cbr\u003eObserved: 37.000\u003cbr\u003ePrediction: 91.540\u003cbr\u003eResidual: -54.540","Index: 391\u003cbr\u003eObserved: 63.000\u003cbr\u003ePrediction: 76.010\u003cbr\u003eResidual: -13.010","Index: 24\u003cbr\u003eObserved: 184.000\u003cbr\u003ePrediction: 158.640\u003cbr\u003eResidual: 25.360"],"x":[144.0,171.58,150.72,253.71,107.19,123.54,239.09,219.01,153.44,184.59,103.27,185.32,91.89,236.98,85.59,139.26,241.74,261.98,167.06,221.73,156.63,113.62,75.13,198.49,139.9,176.87,194.25,159.2,73.15,112.09,166.87,100.91,182.62,207.63,159.57,204.45,104.14,113.15,176.29,76.96,76.73,95.14,168.26,156.12,167.28,84.98,74.32,123.17,76.75,162.77,104.82,88.74,178.42,117.31,189.34,140.62,102.41,224.09,92.63,88.03,157.84,170.34,141.44,101.54,132.92,227.33,183.72,178.32,145.88,151.79,185.02,193.13,211.46,109.86,80.11,158.08,211.58,165.56,186.47,203.63,96.42,117.94,81.38,75.74,84.91,74.88,91.54,76.01,158.64],"y":[75.0,-101.58000000000001,51.28,-23.710000000000008,3.8100000000000023,-39.540000000000006,2.9099999999999966,52.99000000000001,-59.44,-88.59,-9.269999999999996,66.68,7.109999999999999,60.02000000000001,49.41,-72.25999999999999,53.25999999999999,2.019999999999982,2.9399999999999977,53.27000000000001,153.37,-49.620000000000005,52.870000000000005,33.50999999999999,-10.900000000000006,-58.870000000000005,68.75,-82.19999999999999,-25.150000000000006,-5.090000000000003,-26.870000000000005,12.090000000000003,-92.62,-43.629999999999995,20.430000000000007,28.55000000000001,-62.14,-29.150000000000006,-4.289999999999992,-13.959999999999994,-28.730000000000004,12.86,-12.259999999999991,11.879999999999995,-77.28,-32.980000000000004,125.68,-36.17,13.25,95.22999999999999,31.180000000000007,69.26,-109.41999999999999,-45.31,-18.340000000000003,-45.620000000000005,-30.409999999999997,-73.09,75.37,-28.03,-35.84,-118.34,45.56,0.45999999999999375,81.08000000000001,20.669999999999987,-2.719999999999999,-68.32,-5.8799999999999955,50.21000000000001,-84.02000000000001,28.870000000000005,69.53999999999999,-48.86,8.89,-67.08000000000001,-25.580000000000013,54.44,50.53,29.370000000000005,-28.42,72.06,14.620000000000005,-3.739999999999995,68.09,23.120000000000005,-54.540000000000006,-13.010000000000005,25.360000000000014],"type":"scattergl"},{"hoverinfo":"none","mode":"lines","name":"","x":[144.0,171.58,150.72,253.71,107.19,123.54,239.09,219.01,153.44,184.59,103.27,185.32,91.89,236.98,85.59,139.26,241.74,261.98,167.06,221.73,156.63,113.62,75.13,198.49,139.9,176.87,194.25,159.2,73.15,112.09,166.87,100.91,182.62,207.63,159.57,204.45,104.14,113.15,176.29,76.96,76.73,95.14,168.26,156.12,167.28,84.98,74.32,123.17,76.75,162.77,104.82,88.74,178.42,117.31,189.34,140.62,102.41,224.09,92.63,88.03,157.84,170.34,141.44,101.54,132.92,227.33,183.72,178.32,145.88,151.79,185.02,193.13,211.46,109.86,80.11,158.08,211.58,165.56,186.47,203.63,96.42,117.94,81.38,75.74,84.91,74.88,91.54,76.01,158.64],"y":[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scattergl"}],                        {"hovermode":"closest","plot_bgcolor":"#fff","title":{"text":"Residuals vs predicted target"},"xaxis":{"title":{"text":""}},"yaxis":{"title":{"text":"residuals (y-preds)"}},"template":{"data":{"scatter":[{"type":"scatter"}]}},"margin":{"t":40,"b":40,"l":40,"r":40}},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Plot vs feature</h3><h6 class="card-subtitle">Are predictions and residuals correlated with features?</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.25.2.min.js"></script>                <div id="0e03413f-b6ef-4453-8d45-096f1783f02c" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("0e03413f-b6ef-4453-8d45-096f1783f02c")) {                    Plotly.newPlot(                        "0e03413f-b6ef-4453-8d45-096f1783f02c",                        [{"hoverinfo":"text","mode":"markers","name":"residuals (y-preds)","text":["Index: 287\u003cbr\u003eActual: 219.000\u003cbr\u003ePrediction: 144.000\u003cbr\u003eResidual: 75.000","Index: 211\u003cbr\u003eActual: 70.000\u003cbr\u003ePrediction: 171.580\u003cbr\u003eResidual: -101.580","Index: 72\u003cbr\u003eActual: 202.000\u003cbr\u003ePrediction: 150.720\u003cbr\u003eResidual: 51.280","Index: 321\u003cbr\u003eActual: 230.000\u003cbr\u003ePrediction: 253.710\u003cbr\u003eResidual: -23.710","Index: 73\u003cbr\u003eActual: 111.000\u003cbr\u003ePrediction: 107.190\u003cbr\u003eResidual: 3.810","Index: 418\u003cbr\u003eActual: 84.000\u003cbr\u003ePrediction: 123.540\u003cbr\u003eResidual: -39.540","Index: 367\u003cbr\u003eActual: 242.000\u003cbr\u003ePrediction: 239.090\u003cbr\u003eResidual: 2.910","Index: 354\u003cbr\u003eActual: 272.000\u003cbr\u003ePrediction: 219.010\u003cbr\u003eResidual: 52.990","Index: 281\u003cbr\u003eActual: 94.000\u003cbr\u003ePrediction: 153.440\u003cbr\u003eResidual: -59.440","Index: 148\u003cbr\u003eActual: 96.000\u003cbr\u003ePrediction: 184.590\u003cbr\u003eResidual: -88.590","Index: 429\u003cbr\u003eActual: 94.000\u003cbr\u003ePrediction: 103.270\u003cbr\u003eResidual: -9.270","Index: 78\u003cbr\u003eActual: 252.000\u003cbr\u003ePrediction: 185.320\u003cbr\u003eResidual: 66.680","Index: 126\u003cbr\u003eActual: 99.000\u003cbr\u003ePrediction: 91.890\u003cbr\u003eResidual: 7.110","Index: 113\u003cbr\u003eActual: 297.000\u003cbr\u003ePrediction: 236.980\u003cbr\u003eResidual: 60.020","Index: 329\u003cbr\u003eActual: 135.000\u003cbr\u003ePrediction: 85.590\u003cbr\u003eResidual: 49.410","Index: 427\u003cbr\u003eActual: 67.000\u003cbr\u003ePrediction: 139.260\u003cbr\u003eResidual: -72.260","Index: 172\u003cbr\u003eActual: 295.000\u003cbr\u003ePrediction: 241.740\u003cbr\u003eResidual: 53.260","Index: 268\u003cbr\u003eActual: 264.000\u003cbr\u003ePrediction: 261.980\u003cbr\u003eResidual: 2.020","Index: 76\u003cbr\u003eActual: 170.000\u003cbr\u003ePrediction: 167.060\u003cbr\u003eResidual: 2.940","Index: 116\u003cbr\u003eActual: 275.000\u003cbr\u003ePrediction: 221.730\u003cbr\u003eResidual: 53.270","Index: 9\u003cbr\u003eActual: 310.000\u003cbr\u003ePrediction: 156.630\u003cbr\u003eResidual: 153.370","Index: 181\u003cbr\u003eActual: 64.000\u003cbr\u003ePrediction: 113.620\u003cbr\u003eResidual: -49.620","Index: 55\u003cbr\u003eActual: 128.000\u003cbr\u003ePrediction: 75.130\u003cbr\u003eResidual: 52.870","Index: 399\u003cbr\u003eActual: 232.000\u003cbr\u003ePrediction: 198.490\u003cbr\u003eResidual: 33.510","Index: 30\u003cbr\u003eActual: 129.000\u003cbr\u003ePrediction: 139.900\u003cbr\u003eResidual: -10.900","Index: 140\u003cbr\u003eActual: 118.000\u003cbr\u003ePrediction: 176.870\u003cbr\u003eResidual: -58.870","Index: 341\u003cbr\u003eActual: 263.000\u003cbr\u003ePrediction: 194.250\u003cbr\u003eResidual: 68.750","Index: 209\u003cbr\u003eActual: 77.000\u003cbr\u003ePrediction: 159.200\u003cbr\u003eResidual: -82.200","Index: 436\u003cbr\u003eActual: 48.000\u003cbr\u003ePrediction: 73.150\u003cbr\u003eResidual: -25.150","Index: 132\u003cbr\u003eActual: 107.000\u003cbr\u003ePrediction: 112.090\u003cbr\u003eResidual: -5.090","Index: 407\u003cbr\u003eActual: 140.000\u003cbr\u003ePrediction: 166.870\u003cbr\u003eResidual: -26.870","Index: 79\u003cbr\u003eActual: 113.000\u003cbr\u003ePrediction: 100.910\u003cbr\u003eResidual: 12.090","Index: 39\u003cbr\u003eActual: 90.000\u003cbr\u003ePrediction: 182.620\u003cbr\u003eResidual: -92.620","Index: 333\u003cbr\u003eActual: 164.000\u003cbr\u003ePrediction: 207.630\u003cbr\u003eResidual: -43.630","Index: 311\u003cbr\u003eActual: 180.000\u003cbr\u003ePrediction: 159.570\u003cbr\u003eResidual: 20.430","Index: 422\u003cbr\u003eActual: 233.000\u003cbr\u003ePrediction: 204.450\u003cbr\u003eResidual: 28.550","Index: 75\u003cbr\u003eActual: 42.000\u003cbr\u003ePrediction: 104.140\u003cbr\u003eResidual: -62.140","Index: 157\u003cbr\u003eActual: 84.000\u003cbr\u003ePrediction: 113.150\u003cbr\u003eResidual: -29.150","Index: 307\u003cbr\u003eActual: 172.000\u003cbr\u003ePrediction: 176.290\u003cbr\u003eResidual: -4.290","Index: 370\u003cbr\u003eActual: 63.000\u003cbr\u003ePrediction: 76.960\u003cbr\u003eResidual: -13.960","Index: 70\u003cbr\u003eActual: 48.000\u003cbr\u003ePrediction: 76.730\u003cbr\u003eResidual: -28.730","Index: 227\u003cbr\u003eActual: 108.000\u003cbr\u003ePrediction: 95.140\u003cbr\u003eResidual: 12.860","Index: 284\u003cbr\u003eActual: 156.000\u003cbr\u003ePrediction: 168.260\u003cbr\u003eResidual: -12.260","Index: 402\u003cbr\u003eActual: 168.000\u003cbr\u003ePrediction: 156.120\u003cbr\u003eResidual: 11.880","Index: 199\u003cbr\u003eActual: 90.000\u003cbr\u003ePrediction: 167.280\u003cbr\u003eResidual: -77.280","Index: 82\u003cbr\u003eActual: 52.000\u003cbr\u003ePrediction: 84.980\u003cbr\u003eResidual: -32.980","Index: 77\u003cbr\u003eActual: 200.000\u003cbr\u003ePrediction: 74.320\u003cbr\u003eResidual: 125.680","Index: 33\u003cbr\u003eActual: 87.000\u003cbr\u003ePrediction: 123.170\u003cbr\u003eResidual: -36.170","Index: 358\u003cbr\u003eActual: 90.000\u003cbr\u003ePrediction: 76.750\u003cbr\u003eResidual: 13.250","Index: 395\u003cbr\u003eActual: 258.000\u003cbr\u003ePrediction: 162.770\u003cbr\u003eResidual: 95.230","Index: 411\u003cbr\u003eActual: 136.000\u003cbr\u003ePrediction: 104.820\u003cbr\u003eResidual: 31.180","Index: 131\u003cbr\u003eActual: 158.000\u003cbr\u003ePrediction: 88.740\u003cbr\u003eResidual: 69.260","Index: 11\u003cbr\u003eActual: 69.000\u003cbr\u003ePrediction: 178.420\u003cbr\u003eResidual: -109.420","Index: 386\u003cbr\u003eActual: 72.000\u003cbr\u003ePrediction: 117.310\u003cbr\u003eResidual: -45.310","Index: 15\u003cbr\u003eActual: 171.000\u003cbr\u003ePrediction: 189.340\u003cbr\u003eResidual: -18.340","Index: 104\u003cbr\u003eActual: 95.000\u003cbr\u003ePrediction: 140.620\u003cbr\u003eResidual: -45.620","Index: 196\u003cbr\u003eActual: 72.000\u003cbr\u003ePrediction: 102.410\u003cbr\u003eResidual: -30.410","Index: 0\u003cbr\u003eActual: 151.000\u003cbr\u003ePrediction: 224.090\u003cbr\u003eResidual: -73.090","Index: 19\u003cbr\u003eActual: 168.000\u003cbr\u003ePrediction: 92.630\u003cbr\u003eResidual: 75.370","Index: 286\u003cbr\u003eActual: 60.000\u003cbr\u003ePrediction: 88.030\u003cbr\u003eResidual: -28.030","Index: 320\u003cbr\u003eActual: 122.000\u003cbr\u003ePrediction: 157.840\u003cbr\u003eResidual: -35.840","Index: 56\u003cbr\u003eActual: 52.000\u003cbr\u003ePrediction: 170.340\u003cbr\u003eResidual: -118.340","Index: 244\u003cbr\u003eActual: 187.000\u003cbr\u003ePrediction: 141.440\u003cbr\u003eResidual: 45.560","Index: 101\u003cbr\u003eActual: 102.000\u003cbr\u003ePrediction: 101.540\u003cbr\u003eResidual: 0.460","Index: 218\u003cbr\u003eActual: 214.000\u003cbr\u003ePrediction: 132.920\u003cbr\u003eResidual: 81.080","Index: 291\u003cbr\u003eActual: 248.000\u003cbr\u003ePrediction: 227.330\u003cbr\u003eResidual: 20.670","Index: 409\u003cbr\u003eActual: 181.000\u003cbr\u003ePrediction: 183.720\u003cbr\u003eResidual: -2.720","Index: 388\u003cbr\u003eActual: 110.000\u003cbr\u003ePrediction: 178.320\u003cbr\u003eResidual: -68.320","Index: 374\u003cbr\u003eActual: 140.000\u003cbr\u003ePrediction: 145.880\u003cbr\u003eResidual: -5.880","Index: 25\u003cbr\u003eActual: 202.000\u003cbr\u003ePrediction: 151.790\u003cbr\u003eResidual: 50.210","Index: 185\u003cbr\u003eActual: 101.000\u003cbr\u003ePrediction: 185.020\u003cbr\u003eResidual: -84.020","Index: 203\u003cbr\u003eActual: 222.000\u003cbr\u003ePrediction: 193.130\u003cbr\u003eResidual: 28.870","Index: 117\u003cbr\u003eActual: 281.000\u003cbr\u003ePrediction: 211.460\u003cbr\u003eResidual: 69.540","Index: 42\u003cbr\u003eActual: 61.000\u003cbr\u003ePrediction: 109.860\u003cbr\u003eResidual: -48.860","Index: 296\u003cbr\u003eActual: 89.000\u003cbr\u003ePrediction: 80.110\u003cbr\u003eResidual: 8.890","Index: 423\u003cbr\u003eActual: 91.000\u003cbr\u003ePrediction: 158.080\u003cbr\u003eResidual: -67.080","Index: 155\u003cbr\u003eActual: 186.000\u003cbr\u003ePrediction: 211.580\u003cbr\u003eResidual: -25.580","Index: 440\u003cbr\u003eActual: 220.000\u003cbr\u003ePrediction: 165.560\u003cbr\u003eResidual: 54.440","Index: 176\u003cbr\u003eActual: 237.000\u003cbr\u003ePrediction: 186.470\u003cbr\u003eResidual: 50.530","Index: 285\u003cbr\u003eActual: 233.000\u003cbr\u003ePrediction: 203.630\u003cbr\u003eResidual: 29.370","Index: 22\u003cbr\u003eActual: 68.000\u003cbr\u003ePrediction: 96.420\u003cbr\u003eResidual: -28.420","Index: 46\u003cbr\u003eActual: 190.000\u003cbr\u003ePrediction: 117.940\u003cbr\u003eResidual: 72.060","Index: 93\u003cbr\u003eActual: 96.000\u003cbr\u003ePrediction: 81.380\u003cbr\u003eResidual: 14.620","Index: 433\u003cbr\u003eActual: 72.000\u003cbr\u003ePrediction: 75.740\u003cbr\u003eResidual: -3.740","Index: 255\u003cbr\u003eActual: 153.000\u003cbr\u003ePrediction: 84.910\u003cbr\u003eResidual: 68.090","Index: 90\u003cbr\u003eActual: 98.000\u003cbr\u003ePrediction: 74.880\u003cbr\u003eResidual: 23.120","Index: 57\u003cbr\u003eActual: 37.000\u003cbr\u003ePrediction: 91.540\u003cbr\u003eResidual: -54.540","Index: 391\u003cbr\u003eActual: 63.000\u003cbr\u003ePrediction: 76.010\u003cbr\u003eResidual: -13.010","Index: 24\u003cbr\u003eActual: 184.000\u003cbr\u003ePrediction: 158.640\u003cbr\u003eResidual: 25.360"],"x":[-0.006205954135807083,0.0369065288194249,-0.004050329988045492,0.05199589785375607,-0.020217511096257485,-0.02452875939178067,0.17055522598064407,0.045529025410471304,-0.09027529589850945,0.015350287341808908,-0.033151255982827074,-0.05794093368208547,-0.061174369903727877,0.014272475267928093,-0.05578530953432388,0.005649978676881689,0.07139651518361048,0.08864150836570328,0.028284032228378497,0.05846277029704089,0.039062152967186486,-0.04285156464775429,-0.049318437091039065,0.022894971858974496,0.04445121333659049,0.014272475267928093,0.05954058237092167,-0.018061886948495892,-0.07410811479029747,-0.0212953231701383,0.09295275666122646,-0.03746250427835029,0.014272475267928093,-0.006205954135807083,0.04013996504106731,0.07786338762689529,-0.03099563183506548,-0.033151255982827074,-0.03099563183506548,-0.05794093368208547,-0.06979686649477428,-0.029917819761184662,-0.022373135244019075,-0.033151255982827074,-0.04500718879551588,-0.035306880130588664,-0.03638469220446948,-0.050396249164919873,-0.08488623552910546,0.0013387303813585058,0.05846277029704089,-0.06979686649477428,0.0175059114895705,-0.040695940499992665,-0.018061886948495892,0.06492964274032566,-0.04608500086939666,0.061696206518683294,-0.018061886948495892,-0.05470749746044306,0.030439656376140087,0.04121777711494808,0.05415152200151766,-0.04500718879551588,-0.06548561819925106,0.018583723563451313,-0.011595014505211082,-0.02452875939178067,-0.03422906805670789,-0.012672826579091896,-0.018061886948495892,0.030439656376140087,-0.0212953231701383,-0.010517202431330305,-0.061174369903727877,-0.039618128426111884,0.06061839444480248,0.039062152967186486,0.01966153563733209,-0.020217511096257485,-0.004050329988045492,-0.011595014505211082,-0.06440780612537028,-0.06009655782984706,-0.06548561819925106,-0.02560657146566148,-0.06332999405148947,-0.06979686649477428,0.03582871674554409],"y":[75.0,-101.58000000000001,51.28,-23.710000000000008,3.8100000000000023,-39.540000000000006,2.9099999999999966,52.99000000000001,-59.44,-88.59,-9.269999999999996,66.68,7.109999999999999,60.02000000000001,49.41,-72.25999999999999,53.25999999999999,2.019999999999982,2.9399999999999977,53.27000000000001,153.37,-49.620000000000005,52.870000000000005,33.50999999999999,-10.900000000000006,-58.870000000000005,68.75,-82.19999999999999,-25.150000000000006,-5.090000000000003,-26.870000000000005,12.090000000000003,-92.62,-43.629999999999995,20.430000000000007,28.55000000000001,-62.14,-29.150000000000006,-4.289999999999992,-13.959999999999994,-28.730000000000004,12.86,-12.259999999999991,11.879999999999995,-77.28,-32.980000000000004,125.68,-36.17,13.25,95.22999999999999,31.180000000000007,69.26,-109.41999999999999,-45.31,-18.340000000000003,-45.620000000000005,-30.409999999999997,-73.09,75.37,-28.03,-35.84,-118.34,45.56,0.45999999999999375,81.08000000000001,20.669999999999987,-2.719999999999999,-68.32,-5.8799999999999955,50.21000000000001,-84.02000000000001,28.870000000000005,69.53999999999999,-48.86,8.89,-67.08000000000001,-25.580000000000013,54.44,50.53,29.370000000000005,-28.42,72.06,14.620000000000005,-3.739999999999995,68.09,23.120000000000005,-54.540000000000006,-13.010000000000005,25.360000000000014],"type":"scattergl"},{"hoverinfo":"none","mode":"lines","name":"bmi","x":[-0.006205954135807083,0.0369065288194249,-0.004050329988045492,0.05199589785375607,-0.020217511096257485,-0.02452875939178067,0.17055522598064407,0.045529025410471304,-0.09027529589850945,0.015350287341808908,-0.033151255982827074,-0.05794093368208547,-0.061174369903727877,0.014272475267928093,-0.05578530953432388,0.005649978676881689,0.07139651518361048,0.08864150836570328,0.028284032228378497,0.05846277029704089,0.039062152967186486,-0.04285156464775429,-0.049318437091039065,0.022894971858974496,0.04445121333659049,0.014272475267928093,0.05954058237092167,-0.018061886948495892,-0.07410811479029747,-0.0212953231701383,0.09295275666122646,-0.03746250427835029,0.014272475267928093,-0.006205954135807083,0.04013996504106731,0.07786338762689529,-0.03099563183506548,-0.033151255982827074,-0.03099563183506548,-0.05794093368208547,-0.06979686649477428,-0.029917819761184662,-0.022373135244019075,-0.033151255982827074,-0.04500718879551588,-0.035306880130588664,-0.03638469220446948,-0.050396249164919873,-0.08488623552910546,0.0013387303813585058,0.05846277029704089,-0.06979686649477428,0.0175059114895705,-0.040695940499992665,-0.018061886948495892,0.06492964274032566,-0.04608500086939666,0.061696206518683294,-0.018061886948495892,-0.05470749746044306,0.030439656376140087,0.04121777711494808,0.05415152200151766,-0.04500718879551588,-0.06548561819925106,0.018583723563451313,-0.011595014505211082,-0.02452875939178067,-0.03422906805670789,-0.012672826579091896,-0.018061886948495892,0.030439656376140087,-0.0212953231701383,-0.010517202431330305,-0.061174369903727877,-0.039618128426111884,0.06061839444480248,0.039062152967186486,0.01966153563733209,-0.020217511096257485,-0.004050329988045492,-0.011595014505211082,-0.06440780612537028,-0.06009655782984706,-0.06548561819925106,-0.02560657146566148,-0.06332999405148947,-0.06979686649477428,0.03582871674554409],"y":[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"type":"scattergl"}],                        {"hovermode":"closest","plot_bgcolor":"#fff","title":{"text":"Residuals vs bmi"},"xaxis":{"title":{"text":"bmi value"}},"yaxis":{"title":{"text":"residuals (y-preds)"},"range":[-118.34,153.37]},"template":{"data":{"scatter":[{"type":"scatter"}]}},"margin":{"t":40,"b":40,"l":40,"r":40}},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+</div> 
+    
+</div>
+        
+</div> 
+    
+    </div>
+</div>
+    
+</div>
+
+<div class="tab-pane " id="myTab2"
+     role="tabpanel" aria-labelledby="myTab2-tab"> <div><H1>Individual Predictions</H1></div>
+<div>
+    <div>
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="row row-cols-2 g-4" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Select Index</h3></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+Selected index: <b>None</b>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Prediction</h3></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+no index selected
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+</div> 
+    
+</div>
+        
+</div> 
+        </div><div>
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="row row-cols-2 g-4" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Contributions Plot</h3><h6 class="card-subtitle">How has each feature contributed to the prediction?</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+<div>no index selected</div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Partial Dependence Plot</h3></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.25.2.min.js"></script>                <div id="e06979f0-aa4b-4df1-a420-8daa652b8527" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("e06979f0-aa4b-4df1-a420-8daa652b8527")) {                    Plotly.newPlot(                        "e06979f0-aa4b-4df1-a420-8daa652b8527",                        [{"line":{"color":"grey","width":4},"mode":"lines+markers","name":"average prediction \u003cbr\u003efor different values of \u003cbr\u003ebmi","x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[126.22,125.8,129.19,129.41,133.76,134.83,182.55,168.28,168.67,232.33],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[167.89,167.89,170.09,170.18,182.32,183.72,185.12,187.87,186.64,232.09],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[100.98,100.25,101.54,101.21,104.75,103.47,164.29,165.42,173.24,228.15],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[82.22,76.07,81.25,77.43,81.44,82.61,170.58,125.35,116.93,198.19],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[179.63,179.63,182.17,182.98,192.43,197.06,236.98,242.27,255.09,282.27],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[211.86,211.86,213.94,214.15,232.99,238.1,244.85,252.66,262.72,268.24],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[105.74,108.64,113.28,113.36,114.01,114.43,170.9,141.78,129.68,190.87],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[79.86,72.74,73.84,73.92,74.06,77.52,190.39,164.0,148.73,199.3],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[156.27,156.27,158.37,159.25,164.88,165.54,212.69,217.43,211.93,237.28],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[133.29,134.94,143.47,147.29,146.93,144.34,195.59,159.98,148.22,214.76],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[84.32,87.26,100.35,102.15,102.51,97.02,162.06,143.23,146.35,226.3],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[119.04,117.78,121.89,119.87,127.34,123.84,159.89,144.55,149.17,227.87],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[167.5,167.5,170.57,171.85,174.02,173.95,194.66,180.82,183.16,239.09],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[100.19,96.02,96.38,96.87,95.47,101.5,177.97,162.93,149.1,206.45],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[95.71,91.89,91.05,87.73,94.16,95.37,192.17,163.4,155.93,206.36],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[106.79,106.44,106.56,105.19,99.01,102.38,165.39,158.54,170.75,276.1],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[131.92,131.92,133.68,134.98,144.66,145.94,160.27,152.62,151.31,220.89],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[154.95,154.95,157.87,159.84,179.63,186.25,208.92,198.01,199.29,243.44],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[160.14,160.72,164.87,167.88,171.5,174.75,187.01,178.29,197.73,293.06],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[82.41,80.11,83.5,82.15,82.32,78.01,157.17,119.4,118.96,199.66],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[183.01,183.01,185.12,184.81,195.44,198.47,219.08,228.97,228.2,248.85],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[101.63,105.12,116.3,116.98,121.66,118.42,160.02,144.87,146.08,214.95],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[181.32,181.32,183.62,184.78,200.8,199.92,184.19,190.58,188.2,245.09],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[132.61,131.32,135.48,135.77,137.6,138.88,165.29,166.95,184.79,246.56],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[117.31,119.87,123.64,124.15,121.88,124.43,159.22,146.15,139.96,204.81],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[78.27,82.04,91.56,92.7,93.44,88.87,167.63,121.73,113.97,197.73],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[90.62,92.92,102.41,102.98,100.86,105.2,167.59,139.61,124.65,191.66],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[89.55,83.31,86.32,83.61,87.29,88.33,146.27,108.13,104.82,188.79],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[87.17,86.4,96.18,93.13,92.94,90.63,164.62,136.98,140.07,206.81],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[96.17,92.14,96.35,92.43,92.86,91.01,159.21,118.48,113.92,202.07],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[182.2,182.2,185.8,187.38,203.63,207.88,211.29,203.4,206.76,257.97],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[160.67,160.67,162.34,162.93,169.1,170.3,180.53,174.8,190.01,276.26],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[80.71,84.69,92.79,93.96,96.24,95.31,174.06,125.15,108.74,185.06],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[173.08,173.83,176.52,176.8,183.68,183.51,190.29,192.52,202.98,274.07],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[74.38,73.61,77.31,74.1,72.48,70.7,148.88,122.33,120.6,206.1],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[82.71,85.52,89.64,89.78,91.87,90.35,174.04,132.25,122.17,198.88],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[176.15,176.04,177.54,176.9,193.52,196.79,198.4,200.36,221.92,302.96],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[169.34,169.34,169.34,171.67,187.2,191.86,204.44,206.37,208.59,241.46],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[148.83,149.02,152.26,151.97,158.11,157.06,172.99,146.2,158.79,242.48],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[121.21,121.17,128.8,128.79,133.56,130.36,180.57,171.62,181.08,236.27],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[174.4,174.4,176.53,176.38,183.05,184.15,217.83,214.05,216.33,246.63],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[140.0,140.0,140.88,139.46,146.6,147.9,184.0,179.08,180.43,232.75],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[119.17,118.64,119.49,118.87,124.42,122.74,182.63,184.02,184.47,235.54],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[150.95,150.95,154.89,156.12,164.33,170.05,213.34,199.46,204.43,277.39],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[119.47,119.39,121.53,119.99,124.71,127.69,182.62,161.71,161.97,265.49],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[153.44,153.44,156.63,157.14,161.7,160.96,199.33,180.34,174.58,257.35],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[79.92,78.06,82.69,82.91,80.96,83.27,155.42,136.71,134.76,203.81],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[95.11,98.76,102.81,103.27,102.33,105.45,181.54,154.75,147.02,200.48],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[163.81,163.81,166.7,167.72,172.77,173.57,185.99,168.22,183.73,263.5],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[90.44,91.31,92.83,92.25,94.91,91.73,154.62,156.51,167.92,221.59],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"grey"},"mode":"lines","opacity":0.1,"showlegend":false,"x":[-0.09027529589850945,-0.061653397492119344,-0.04548621638390734,-0.033151255982827074,-0.0212953231701383,-0.011595014505211082,0.014272475267928093,0.03630774433393554,0.05846277029704089,0.17055522598064407],"y":[132.98,132.98,133.69,133.49,139.88,143.04,154.34,146.91,149.75,217.16],"type":"scatter"}],                        {"plot_bgcolor":"#fff","title":{"text":"pdp plot for bmi"},"xaxis":{"title":{"text":"bmi"}},"yaxis":{"title":{"text":"Predicted target"}},"template":{"data":{"scatter":[{"type":"scatter"}]}},"showlegend":false,"margin":{"t":40,"b":40,"l":40,"r":40}},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+</div> 
+    
+</div>
+        
+</div> 
+        </div><div>
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="row row-cols-1 g-4" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Contributions Table</h3><h6 class="card-subtitle">How has each feature contributed to the prediction?</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+<div>no index selected</div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+</div> 
+    
+</div>
+        
+</div> 
+    
+    </div>
+</div>
+    
+</div>
+
+<div class="tab-pane " id="myTab3"
+     role="tabpanel" aria-labelledby="myTab3-tab"> <div><div><H1>What if...</H1></div>
+<div>
+    <div>
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="row row-cols-2 g-4" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Select Index</h3></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+Selected index: <b>None</b>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Prediction</h3></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+<div>input data incorrect</div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+</div> 
+    
+</div>
+        
+</div> 
+        </div><div>
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="row row-cols-1 g-4" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Feature Input</h3><h6 class="card-subtitle">Adjust the feature values to change the prediction</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+Selected: <b>None</b>
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div style="display:flex;flex-direction:column;">
+    <label for="bmi">bmi</label>
+    <input id="bmi" type="text" value="None" name="bmi" disabled>
+</div>
+    
+<div style="display:flex;flex-direction:column;">
+    <label for="age">age</label>
+    <input id="age" type="text" value="None" name="age" disabled>
+</div>
+    
+<div style="display:flex;flex-direction:column;">
+    <label for="sex">sex</label>
+    <input id="sex" type="text" value="None" name="sex" disabled>
+</div>
+    
+</div>
+        
+<div class="col">
+
+<div style="display:flex;flex-direction:column;">
+    <label for="s5">s5</label>
+    <input id="s5" type="text" value="None" name="s5" disabled>
+</div>
+    
+<div style="display:flex;flex-direction:column;">
+    <label for="s6">s6</label>
+    <input id="s6" type="text" value="None" name="s6" disabled>
+</div>
+    
+<div style="display:flex;flex-direction:column;">
+    <label for="s2">s2</label>
+    <input id="s2" type="text" value="None" name="s2" disabled>
+</div>
+    
+</div>
+        
+<div class="col">
+
+<div style="display:flex;flex-direction:column;">
+    <label for="bp">bp</label>
+    <input id="bp" type="text" value="None" name="bp" disabled>
+</div>
+    
+<div style="display:flex;flex-direction:column;">
+    <label for="s1">s1</label>
+    <input id="s1" type="text" value="None" name="s1" disabled>
+</div>
+    
+</div>
+        
+<div class="col">
+
+<div style="display:flex;flex-direction:column;">
+    <label for="s3">s3</label>
+    <input id="s3" type="text" value="None" name="s3" disabled>
+</div>
+    
+<div style="display:flex;flex-direction:column;">
+    <label for="s4">s4</label>
+    <input id="s4" type="text" value="None" name="s4" disabled>
+</div>
+    
+</div>
+        
+</div> 
+    
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+</div> 
+    
+</div>
+        
+</div> 
+        </div><div>
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="row row-cols-2 g-4" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Contributions Plot</h3><h6 class="card-subtitle">How has each feature contributed to the prediction?</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+<div>input data incorrect</div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Partial Dependence Plot</h3></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+<div>input data incorrect</div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+</div> 
+    
+</div>
+        
+</div> 
+        </div><div>
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="row row-cols-1 g-4" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Contributions Table</h3><h6 class="card-subtitle">How has each feature contributed to the prediction?</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+<div>input data incorrect</div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+</div> 
+    
+</div>
+        
+</div> 
+    
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="tab-pane " id="myTab4"
+     role="tabpanel" aria-labelledby="myTab4-tab"> <div><H1>Feature Dependence</H1></div>
+<div>
+    <div>
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="row row-cols-2 g-4" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Shap Summary</h3><h6 class="card-subtitle">Ordering features by shap value</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.25.2.min.js"></script>                <div id="13d50347-a809-4d19-997c-e601c42e6964" class="plotly-graph-div" style="height:400px; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("13d50347-a809-4d19-997c-e601c42e6964")) {                    Plotly.newPlot(                        "13d50347-a809-4d19-997c-e601c42e6964",                        [{"hoverinfo":"text","orientation":"h","x":[2.176986780670979,2.2116806367790396,2.383782427459061,2.6353848089120144,3.7625861201654645,4.04397390799058,4.267195523997213,7.598715516296599,23.714497276422602,28.125855616148534],"y":["10. s2","9. sex","8. s4","7. s1","6. s6","5. age","4. s3","3. bp","2. s5","1. bmi"],"type":"bar"}],                        {"plot_bgcolor":"#fff","showlegend":false,"title":{"text":"Average impact on predicted target\u003cbr\u003e(mean absolute SHAP value)"},"template":{"data":{"scatter":[{"type":"scatter"}]}},"yaxis":{"automargin":true},"xaxis":{"automargin":true,"title":{"text":""}},"height":400,"margin":{"b":40,"l":21,"pad":4,"r":40,"t":40}},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Shap Dependence</h3><h6 class="card-subtitle">Relationship between feature value and SHAP value</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.25.2.min.js"></script>                <div id="a4c1c60b-218f-4652-9ed6-3e7b9864c045" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("a4c1c60b-218f-4652-9ed6-3e7b9864c045")) {                    Plotly.newPlot(                        "a4c1c60b-218f-4652-9ed6-3e7b9864c045",                        [{"hoverinfo":"text","marker":{"color":[0.03243232415655107,-0.022516528376302174,0.08449153066204618,0.0986480615153178,-0.005142189801713891,-0.021395309255276825,0.033653814906286016,0.07419089971278872,0.024055085357995654,-0.030747917533098208,-0.025953110560258,0.04289703595278786,-0.09393727482535742,0.04666177983070229,-0.017056282412934727,-0.04542403773513769,0.07340695788833193,0.02929655685872395,-0.030747917533098208,0.02200407477075404,0.06773705306493534,-0.025953110560258,-0.06649019536676071,0.03954249419232167,-0.02712902329694316,-0.03324559264822791,-0.024795429028792802,-0.011896851335695978,-0.061175799045152635,-0.012908683225401873,-0.04835926177554553,-0.0683315470939731,0.019196469166885697,0.02929655685872395,0.012551194864223063,0.04067282891595704,0.006206735447689297,0.010226716198682649,0.02337141516224845,-0.061175799045152635,-0.06291687914365544,-0.03845971734112638,0.002861309289833047,0.015568459328120622,0.0898970830097539,-0.07020936123162536,-0.07409260794346935,-0.018113692315690322,-0.08237869071592514,0.031812463179073616,-0.05140387304727299,-0.04688253415273158,-0.09643494994048712,-0.030747917533098208,0.036060333995316066,-0.061175799045152635,-0.03324559264822791,0.019907486170462722,-0.00894339609006817,-0.019198449026275908,0.0330430695314185,0.033653814906286016,-0.04398377252276359,-0.030747917533098208,0.007027139682585861,0.05803805188793539,0.030563625621508765,0.02671684132010462,-0.0006117353045626216,0.019196469166885697,0.06731773534487707,0.025395078941660074,0.07912244072477838,-0.009918765569334137,-0.05615310200706333,0.015568459328120622,0.037810529696428806,0.04452872881997113,-0.003300838074501491,0.05987940361514779,-0.061175799045152635,-0.007977142213412223,-0.03324559264822791,-0.05140387304727299,-0.003300838074501491,-0.07213275338232743,-0.05615310200706333,-0.08913335224990723,-0.025953110560258],"colorbar":{"title":{"text":"s5"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"opacity":0.6,"showscale":true,"size":7},"mode":"markers","text":["None=287\u003cbr\u003ebmi=-0.006205954135807083\u003cbr\u003es5=0.03243232415655107\u003cbr\u003eSHAP=-12.370","None=211\u003cbr\u003ebmi=0.0369065288194249\u003cbr\u003es5=-0.022516528376302174\u003cbr\u003eSHAP=26.349","None=72\u003cbr\u003ebmi=-0.004050329988045492\u003cbr\u003es5=0.08449153066204618\u003cbr\u003eSHAP=-16.722","None=321\u003cbr\u003ebmi=0.05199589785375607\u003cbr\u003es5=0.0986480615153178\u003cbr\u003eSHAP=23.053","None=73\u003cbr\u003ebmi=-0.020217511096257485\u003cbr\u003es5=-0.005142189801713891\u003cbr\u003eSHAP=-26.921","None=418\u003cbr\u003ebmi=-0.02452875939178067\u003cbr\u003es5=-0.021395309255276825\u003cbr\u003eSHAP=-22.485","None=367\u003cbr\u003ebmi=0.17055522598064407\u003cbr\u003es5=0.033653814906286016\u003cbr\u003eSHAP=76.272","None=354\u003cbr\u003ebmi=0.045529025410471304\u003cbr\u003es5=0.07419089971278872\u003cbr\u003eSHAP=26.323","None=281\u003cbr\u003ebmi=-0.09027529589850945\u003cbr\u003es5=0.024055085357995654\u003cbr\u003eSHAP=-30.356","None=148\u003cbr\u003ebmi=0.015350287341808908\u003cbr\u003es5=-0.030747917533098208\u003cbr\u003eSHAP=44.000","None=429\u003cbr\u003ebmi=-0.033151255982827074\u003cbr\u003es5=-0.025953110560258\u003cbr\u003eSHAP=-26.353","None=78\u003cbr\u003ebmi=-0.05794093368208547\u003cbr\u003es5=0.04289703595278786\u003cbr\u003eSHAP=-25.053","None=126\u003cbr\u003ebmi=-0.061174369903727877\u003cbr\u003es5=-0.09393727482535742\u003cbr\u003eSHAP=-32.862","None=113\u003cbr\u003ebmi=0.014272475267928093\u003cbr\u003es5=0.04666177983070229\u003cbr\u003eSHAP=27.312","None=329\u003cbr\u003ebmi=-0.05578530953432388\u003cbr\u003es5=-0.017056282412934727\u003cbr\u003eSHAP=-34.271","None=427\u003cbr\u003ebmi=0.005649978676881689\u003cbr\u003es5=-0.04542403773513769\u003cbr\u003eSHAP=10.297","None=172\u003cbr\u003ebmi=0.07139651518361048\u003cbr\u003es5=0.07340695788833193\u003cbr\u003eSHAP=43.472","None=268\u003cbr\u003ebmi=0.08864150836570328\u003cbr\u003es5=0.02929655685872395\u003cbr\u003eSHAP=56.693","None=76\u003cbr\u003ebmi=0.028284032228378497\u003cbr\u003es5=-0.030747917533098208\u003cbr\u003eSHAP=27.204","None=116\u003cbr\u003ebmi=0.05846277029704089\u003cbr\u003es5=0.02200407477075404\u003cbr\u003eSHAP=27.169","None=9\u003cbr\u003ebmi=0.039062152967186486\u003cbr\u003es5=0.06773705306493534\u003cbr\u003eSHAP=9.086","None=181\u003cbr\u003ebmi=-0.04285156464775429\u003cbr\u003es5=-0.025953110560258\u003cbr\u003eSHAP=-24.330","None=55\u003cbr\u003ebmi=-0.049318437091039065\u003cbr\u003es5=-0.06649019536676071\u003cbr\u003eSHAP=-27.511","None=399\u003cbr\u003ebmi=0.022894971858974496\u003cbr\u003es5=0.03954249419232167\u003cbr\u003eSHAP=22.948","None=30\u003cbr\u003ebmi=0.04445121333659049\u003cbr\u003es5=-0.02712902329694316\u003cbr\u003eSHAP=22.653","None=140\u003cbr\u003ebmi=0.014272475267928093\u003cbr\u003es5=-0.03324559264822791\u003cbr\u003eSHAP=35.152","None=341\u003cbr\u003ebmi=0.05954058237092167\u003cbr\u003es5=-0.024795429028792802\u003cbr\u003eSHAP=37.298","None=209\u003cbr\u003ebmi=-0.018061886948495892\u003cbr\u003es5=-0.011896851335695978\u003cbr\u003eSHAP=-24.104","None=436\u003cbr\u003ebmi=-0.07410811479029747\u003cbr\u003es5=-0.061175799045152635\u003cbr\u003eSHAP=-28.426","None=132\u003cbr\u003ebmi=-0.0212953231701383\u003cbr\u003es5=-0.012908683225401873\u003cbr\u003eSHAP=-24.313","None=407\u003cbr\u003ebmi=0.09295275666122646\u003cbr\u003es5=-0.04835926177554553\u003cbr\u003eSHAP=64.318","None=79\u003cbr\u003ebmi=-0.03746250427835029\u003cbr\u003es5=-0.0683315470939731\u003cbr\u003eSHAP=-31.856","None=39\u003cbr\u003ebmi=0.014272475267928093\u003cbr\u003es5=0.019196469166885697\u003cbr\u003eSHAP=33.020","None=333\u003cbr\u003ebmi=-0.006205954135807083\u003cbr\u003es5=0.02929655685872395\u003cbr\u003eSHAP=-15.007","None=311\u003cbr\u003ebmi=0.04013996504106731\u003cbr\u003es5=0.012551194864223063\u003cbr\u003eSHAP=12.595","None=422\u003cbr\u003ebmi=0.07786338762689529\u003cbr\u003es5=0.04067282891595704\u003cbr\u003eSHAP=55.654","None=75\u003cbr\u003ebmi=-0.03099563183506548\u003cbr\u003es5=0.006206735447689297\u003cbr\u003eSHAP=-34.091","None=157\u003cbr\u003ebmi=-0.033151255982827074\u003cbr\u003es5=0.010226716198682649\u003cbr\u003eSHAP=-29.774","None=307\u003cbr\u003ebmi=-0.03099563183506548\u003cbr\u003es5=0.02337141516224845\u003cbr\u003eSHAP=-29.037","None=370\u003cbr\u003ebmi=-0.05794093368208547\u003cbr\u003es5=-0.061175799045152635\u003cbr\u003eSHAP=-31.615","None=70\u003cbr\u003ebmi=-0.06979686649477428\u003cbr\u003es5=-0.06291687914365544\u003cbr\u003eSHAP=-33.954","None=227\u003cbr\u003ebmi=-0.029917819761184662\u003cbr\u003es5=-0.03845971734112638\u003cbr\u003eSHAP=-28.067","None=284\u003cbr\u003ebmi=-0.022373135244019075\u003cbr\u003es5=0.002861309289833047\u003cbr\u003eSHAP=-26.409","None=402\u003cbr\u003ebmi=-0.033151255982827074\u003cbr\u003es5=0.015568459328120622\u003cbr\u003eSHAP=-32.848","None=199\u003cbr\u003ebmi=-0.04500718879551588\u003cbr\u003es5=0.0898970830097539\u003cbr\u003eSHAP=-29.807","None=82\u003cbr\u003ebmi=-0.035306880130588664\u003cbr\u003es5=-0.07020936123162536\u003cbr\u003eSHAP=-30.801","None=77\u003cbr\u003ebmi=-0.03638469220446948\u003cbr\u003es5=-0.07409260794346935\u003cbr\u003eSHAP=-33.683","None=33\u003cbr\u003ebmi=-0.050396249164919873\u003cbr\u003es5=-0.018113692315690322\u003cbr\u003eSHAP=-22.969","None=358\u003cbr\u003ebmi=-0.08488623552910546\u003cbr\u003es5=-0.08237869071592514\u003cbr\u003eSHAP=-30.399","None=395\u003cbr\u003ebmi=0.0013387303813585058\u003cbr\u003es5=0.031812463179073616\u003cbr\u003eSHAP=-10.443","None=411\u003cbr\u003ebmi=0.05846277029704089\u003cbr\u003es5=-0.05140387304727299\u003cbr\u003eSHAP=17.657","None=131\u003cbr\u003ebmi=-0.06979686649477428\u003cbr\u003es5=-0.04688253415273158\u003cbr\u003eSHAP=-33.372","None=11\u003cbr\u003ebmi=0.0175059114895705\u003cbr\u003es5=-0.09643494994048712\u003cbr\u003eSHAP=45.521","None=386\u003cbr\u003ebmi=-0.040695940499992665\u003cbr\u003es5=-0.030747917533098208\u003cbr\u003eSHAP=-24.787","None=15\u003cbr\u003ebmi=-0.018061886948495892\u003cbr\u003es5=0.036060333995316066\u003cbr\u003eSHAP=-17.409","None=104\u003cbr\u003ebmi=0.06492964274032566\u003cbr\u003es5=-0.061175799045152635\u003cbr\u003eSHAP=31.979","None=196\u003cbr\u003ebmi=-0.04608500086939666\u003cbr\u003es5=-0.03324559264822791\u003cbr\u003eSHAP=-25.436","None=0\u003cbr\u003ebmi=0.061696206518683294\u003cbr\u003es5=0.019907486170462722\u003cbr\u003eSHAP=27.435","None=19\u003cbr\u003ebmi=-0.018061886948495892\u003cbr\u003es5=-0.00894339609006817\u003cbr\u003eSHAP=-23.339","None=286\u003cbr\u003ebmi=-0.05470749746044306\u003cbr\u003es5=-0.019198449026275908\u003cbr\u003eSHAP=-29.567","None=320\u003cbr\u003ebmi=0.030439656376140087\u003cbr\u003es5=0.0330430695314185\u003cbr\u003eSHAP=17.942","None=56\u003cbr\u003ebmi=0.04121777711494808\u003cbr\u003es5=0.033653814906286016\u003cbr\u003eSHAP=11.252","None=244\u003cbr\u003ebmi=0.05415152200151766\u003cbr\u003es5=-0.04398377252276359\u003cbr\u003eSHAP=30.824","None=101\u003cbr\u003ebmi=-0.04500718879551588\u003cbr\u003es5=-0.030747917533098208\u003cbr\u003eSHAP=-30.967","None=218\u003cbr\u003ebmi=-0.06548561819925106\u003cbr\u003es5=0.007027139682585861\u003cbr\u003eSHAP=-31.793","None=291\u003cbr\u003ebmi=0.018583723563451313\u003cbr\u003es5=0.05803805188793539\u003cbr\u003eSHAP=26.250","None=409\u003cbr\u003ebmi=-0.011595014505211082\u003cbr\u003es5=0.030563625621508765\u003cbr\u003eSHAP=-15.910","None=388\u003cbr\u003ebmi=-0.02452875939178067\u003cbr\u003es5=0.02671684132010462\u003cbr\u003eSHAP=-29.196","None=374\u003cbr\u003ebmi=-0.03422906805670789\u003cbr\u003es5=-0.0006117353045626216\u003cbr\u003eSHAP=-23.107","None=25\u003cbr\u003ebmi=-0.012672826579091896\u003cbr\u003es5=0.019196469166885697\u003cbr\u003eSHAP=-16.646","None=185\u003cbr\u003ebmi=-0.018061886948495892\u003cbr\u003es5=0.06731773534487707\u003cbr\u003eSHAP=-16.951","None=203\u003cbr\u003ebmi=0.030439656376140087\u003cbr\u003es5=0.025395078941660074\u003cbr\u003eSHAP=16.447","None=117\u003cbr\u003ebmi=-0.0212953231701383\u003cbr\u003es5=0.07912244072477838\u003cbr\u003eSHAP=-26.122","None=42\u003cbr\u003ebmi=-0.010517202431330305\u003cbr\u003es5=-0.009918765569334137\u003cbr\u003eSHAP=-25.852","None=296\u003cbr\u003ebmi=-0.061174369903727877\u003cbr\u003es5=-0.05615310200706333\u003cbr\u003eSHAP=-30.281","None=423\u003cbr\u003ebmi=-0.039618128426111884\u003cbr\u003es5=0.015568459328120622\u003cbr\u003eSHAP=-31.371","None=155\u003cbr\u003ebmi=0.06061839444480248\u003cbr\u003es5=0.037810529696428806\u003cbr\u003eSHAP=28.939","None=440\u003cbr\u003ebmi=0.039062152967186486\u003cbr\u003es5=0.04452872881997113\u003cbr\u003eSHAP=10.286","None=176\u003cbr\u003ebmi=0.01966153563733209\u003cbr\u003es5=-0.003300838074501491\u003cbr\u003eSHAP=41.061","None=285\u003cbr\u003ebmi=-0.020217511096257485\u003cbr\u003es5=0.05987940361514779\u003cbr\u003eSHAP=-18.456","None=22\u003cbr\u003ebmi=-0.004050329988045492\u003cbr\u003es5=-0.061175799045152635\u003cbr\u003eSHAP=-24.827","None=46\u003cbr\u003ebmi=-0.011595014505211082\u003cbr\u003es5=-0.007977142213412223\u003cbr\u003eSHAP=-19.353","None=93\u003cbr\u003ebmi=-0.06440780612537028\u003cbr\u003es5=-0.03324559264822791\u003cbr\u003eSHAP=-33.215","None=433\u003cbr\u003ebmi=-0.06009655782984706\u003cbr\u003es5=-0.05140387304727299\u003cbr\u003eSHAP=-31.205","None=255\u003cbr\u003ebmi=-0.06548561819925106\u003cbr\u003es5=-0.003300838074501491\u003cbr\u003eSHAP=-34.674","None=90\u003cbr\u003ebmi=-0.02560657146566148\u003cbr\u003es5=-0.07213275338232743\u003cbr\u003eSHAP=-27.894","None=57\u003cbr\u003ebmi=-0.06332999405148947\u003cbr\u003es5=-0.05615310200706333\u003cbr\u003eSHAP=-27.932","None=391\u003cbr\u003ebmi=-0.06979686649477428\u003cbr\u003es5=-0.08913335224990723\u003cbr\u003eSHAP=-32.094","None=24\u003cbr\u003ebmi=0.03582871674554409\u003cbr\u003es5=-0.025953110560258\u003cbr\u003eSHAP=28.145"],"x":[-0.006205954135807083,0.0369065288194249,-0.004050329988045492,0.05199589785375607,-0.020217511096257485,-0.02452875939178067,0.17055522598064407,0.045529025410471304,-0.09027529589850945,0.015350287341808908,-0.033151255982827074,-0.05794093368208547,-0.061174369903727877,0.014272475267928093,-0.05578530953432388,0.005649978676881689,0.07139651518361048,0.08864150836570328,0.028284032228378497,0.05846277029704089,0.039062152967186486,-0.04285156464775429,-0.049318437091039065,0.022894971858974496,0.04445121333659049,0.014272475267928093,0.05954058237092167,-0.018061886948495892,-0.07410811479029747,-0.0212953231701383,0.09295275666122646,-0.03746250427835029,0.014272475267928093,-0.006205954135807083,0.04013996504106731,0.07786338762689529,-0.03099563183506548,-0.033151255982827074,-0.03099563183506548,-0.05794093368208547,-0.06979686649477428,-0.029917819761184662,-0.022373135244019075,-0.033151255982827074,-0.04500718879551588,-0.035306880130588664,-0.03638469220446948,-0.050396249164919873,-0.08488623552910546,0.0013387303813585058,0.05846277029704089,-0.06979686649477428,0.0175059114895705,-0.040695940499992665,-0.018061886948495892,0.06492964274032566,-0.04608500086939666,0.061696206518683294,-0.018061886948495892,-0.05470749746044306,0.030439656376140087,0.04121777711494808,0.05415152200151766,-0.04500718879551588,-0.06548561819925106,0.018583723563451313,-0.011595014505211082,-0.02452875939178067,-0.03422906805670789,-0.012672826579091896,-0.018061886948495892,0.030439656376140087,-0.0212953231701383,-0.010517202431330305,-0.061174369903727877,-0.039618128426111884,0.06061839444480248,0.039062152967186486,0.01966153563733209,-0.020217511096257485,-0.004050329988045492,-0.011595014505211082,-0.06440780612537028,-0.06009655782984706,-0.06548561819925106,-0.02560657146566148,-0.06332999405148947,-0.06979686649477428,0.03582871674554409],"y":[-12.36970167148679,26.34852241677458,-16.72197315317075,23.053369970656153,-26.92115506592824,-22.48531892156376,76.2722290034434,26.32317046990688,-30.356181210753807,44.00032943211717,-26.35333394000071,-25.05284242684173,-32.86245398625807,27.311818185811767,-34.270519414943685,10.296880145386785,43.47167897809799,56.69309910281736,27.20370204738106,27.169423576220897,9.085799448483924,-24.330370039190168,-27.51058903790628,22.947798868176413,22.6525785850555,35.15231574665757,37.29841343414631,-24.104181158386858,-28.425956292229273,-24.312907849227614,64.31849430840275,-31.85592937510796,33.020214559635654,-15.007441309295263,12.59528884683462,55.65374825516305,-34.09054783651071,-29.774285933776778,-29.03704724824788,-31.615442040940714,-33.95412458758967,-28.066999161016778,-26.408785724548693,-32.84788361804593,-29.806767866159205,-30.800730465682474,-33.682820867462894,-22.96868179734793,-30.399347588033624,-10.442913451348092,17.65660813156391,-33.37181042093377,45.52061343742017,-24.78665921325376,-17.40927256290527,31.97869125439417,-25.43595355815589,27.435215821021618,-23.33942931339404,-29.56700257703662,17.942077762715403,11.25223739801042,30.82443991465635,-30.967402040603428,-31.793472818998392,26.250363489176188,-15.909880138933493,-29.195528908013646,-23.10668963370881,-16.645902819309494,-16.95097903613108,16.446890416342878,-26.12156168387486,-25.851875668794516,-30.281118392539735,-31.370615967853897,28.939403802175605,10.285863663389524,41.06105442716074,-18.456369373553095,-24.827388240190757,-19.352946226656027,-33.21508657210335,-31.205271693448086,-34.67387916942013,-27.89447843127811,-27.931876757427084,-32.093697244236914,28.14543343626604],"type":"scattergl"}],                        {"hovermode":"closest","paper_bgcolor":"#fff","plot_bgcolor":"#fff","showlegend":false,"title":{"text":"Dependence plot for bmi"},"xaxis":{"title":{"text":"bmi"}},"yaxis":{"title":{"text":"SHAP value"}},"template":{"data":{"scatter":[{"type":"scatter"}]}},"margin":{"t":40,"b":40,"l":40,"r":40}},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+</div> 
+    
+</div>
+        
+</div> 
+    
+    </div>
+</div>
+    
+</div>
+
+<div class="tab-pane " id="myTab5"
+     role="tabpanel" aria-labelledby="myTab5-tab"> <div><H1>Feature Interactions</H1></div>
+<div>
+    <div>
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="row row-cols-2 g-4" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Interactions Summary</h3><h6 class="card-subtitle">Ordering features by shap interaction value</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.25.2.min.js"></script>                <div id="0f96b7da-81f6-4c6f-ba09-6362bf6a0a76" class="plotly-graph-div" style="height:400px; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("0f96b7da-81f6-4c6f-ba09-6362bf6a0a76")) {                    Plotly.newPlot(                        "0f96b7da-81f6-4c6f-ba09-6362bf6a0a76",                        [{"hoverinfo":"text","orientation":"h","x":[0.6229956348321646,0.7351180400852524,0.8656680356592384,0.9388989804799177,1.2232511030492415,1.2590786847569548,1.6876999317880133,2.011903945082541,4.130711255456547,35.190973857780136],"y":["10. s4","9. sex","8. s1","7. s3","6. s2","5. age","4. s6","3. bp","2. s5","1. bmi"],"type":"bar"}],                        {"plot_bgcolor":"#fff","showlegend":false,"title":{"text":"Average interaction shap values for bmi"},"template":{"data":{"scatter":[{"type":"scatter"}]}},"yaxis":{"automargin":true},"xaxis":{"automargin":true,"title":{"text":""}},"height":400,"margin":{"b":40,"l":21,"pad":4,"r":40,"t":40}},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Interaction Dependence</h3><h6 class="card-subtitle">Relation between feature value and shap interaction value</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.25.2.min.js"></script>                <div id="3640b309-2b83-4ee6-a781-7765385089b9" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("3640b309-2b83-4ee6-a781-7765385089b9")) {                    Plotly.newPlot(                        "3640b309-2b83-4ee6-a781-7765385089b9",                        [{"hoverinfo":"text","marker":{"color":[-0.006205954135807083,0.0369065288194249,-0.004050329988045492,0.05199589785375607,-0.020217511096257485,-0.02452875939178067,0.17055522598064407,0.045529025410471304,-0.09027529589850945,0.015350287341808908,-0.033151255982827074,-0.05794093368208547,-0.061174369903727877,0.014272475267928093,-0.05578530953432388,0.005649978676881689,0.07139651518361048,0.08864150836570328,0.028284032228378497,0.05846277029704089,0.039062152967186486,-0.04285156464775429,-0.049318437091039065,0.022894971858974496,0.04445121333659049,0.014272475267928093,0.05954058237092167,-0.018061886948495892,-0.07410811479029747,-0.0212953231701383,0.09295275666122646,-0.03746250427835029,0.014272475267928093,-0.006205954135807083,0.04013996504106731,0.07786338762689529,-0.03099563183506548,-0.033151255982827074,-0.03099563183506548,-0.05794093368208547,-0.06979686649477428,-0.029917819761184662,-0.022373135244019075,-0.033151255982827074,-0.04500718879551588,-0.035306880130588664,-0.03638469220446948,-0.050396249164919873,-0.08488623552910546,0.0013387303813585058,0.05846277029704089,-0.06979686649477428,0.0175059114895705,-0.040695940499992665,-0.018061886948495892,0.06492964274032566,-0.04608500086939666,0.061696206518683294,-0.018061886948495892,-0.05470749746044306,0.030439656376140087,0.04121777711494808,0.05415152200151766,-0.04500718879551588,-0.06548561819925106,0.018583723563451313,-0.011595014505211082,-0.02452875939178067,-0.03422906805670789,-0.012672826579091896,-0.018061886948495892,0.030439656376140087,-0.0212953231701383,-0.010517202431330305,-0.061174369903727877,-0.039618128426111884,0.06061839444480248,0.039062152967186486,0.01966153563733209,-0.020217511096257485,-0.004050329988045492,-0.011595014505211082,-0.06440780612537028,-0.06009655782984706,-0.06548561819925106,-0.02560657146566148,-0.06332999405148947,-0.06979686649477428,0.03582871674554409],"colorbar":{"title":{"text":"bmi"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"opacity":0.6,"showscale":true,"size":7},"mode":"markers","text":["None=287\u003cbr\u003es5=0.03243232415655107\u003cbr\u003ebmi=-0.006205954135807083\u003cbr\u003eSHAP=1.325","None=211\u003cbr\u003es5=-0.022516528376302174\u003cbr\u003ebmi=0.0369065288194249\u003cbr\u003eSHAP=1.582","None=72\u003cbr\u003es5=0.08449153066204618\u003cbr\u003ebmi=-0.004050329988045492\u003cbr\u003eSHAP=2.438","None=321\u003cbr\u003es5=0.0986480615153178\u003cbr\u003ebmi=0.05199589785375607\u003cbr\u003eSHAP=-10.518","None=73\u003cbr\u003es5=-0.005142189801713891\u003cbr\u003ebmi=-0.020217511096257485\u003cbr\u003eSHAP=0.437","None=418\u003cbr\u003es5=-0.021395309255276825\u003cbr\u003ebmi=-0.02452875939178067\u003cbr\u003eSHAP=4.284","None=367\u003cbr\u003es5=0.033653814906286016\u003cbr\u003ebmi=0.17055522598064407\u003cbr\u003eSHAP=-13.205","None=354\u003cbr\u003es5=0.07419089971278872\u003cbr\u003ebmi=0.045529025410471304\u003cbr\u003eSHAP=-6.568","None=281\u003cbr\u003es5=0.024055085357995654\u003cbr\u003ebmi=-0.09027529589850945\u003cbr\u003eSHAP=4.145","None=148\u003cbr\u003es5=-0.030747917533098208\u003cbr\u003ebmi=0.015350287341808908\u003cbr\u003eSHAP=4.188","None=429\u003cbr\u003es5=-0.025953110560258\u003cbr\u003ebmi=-0.033151255982827074\u003cbr\u003eSHAP=2.923","None=78\u003cbr\u003es5=0.04289703595278786\u003cbr\u003ebmi=-0.05794093368208547\u003cbr\u003eSHAP=2.253","None=126\u003cbr\u003es5=-0.09393727482535742\u003cbr\u003ebmi=-0.061174369903727877\u003cbr\u003eSHAP=0.835","None=113\u003cbr\u003es5=0.04666177983070229\u003cbr\u003ebmi=0.014272475267928093\u003cbr\u003eSHAP=-13.406","None=329\u003cbr\u003es5=-0.017056282412934727\u003cbr\u003ebmi=-0.05578530953432388\u003cbr\u003eSHAP=3.415","None=427\u003cbr\u003es5=-0.04542403773513769\u003cbr\u003ebmi=0.005649978676881689\u003cbr\u003eSHAP=3.092","None=172\u003cbr\u003es5=0.07340695788833193\u003cbr\u003ebmi=0.07139651518361048\u003cbr\u003eSHAP=-6.236","None=268\u003cbr\u003es5=0.02929655685872395\u003cbr\u003ebmi=0.08864150836570328\u003cbr\u003eSHAP=-10.970","None=76\u003cbr\u003es5=-0.030747917533098208\u003cbr\u003ebmi=0.028284032228378497\u003cbr\u003eSHAP=-0.493","None=116\u003cbr\u003es5=0.02200407477075404\u003cbr\u003ebmi=0.05846277029704089\u003cbr\u003eSHAP=-11.553","None=9\u003cbr\u003es5=0.06773705306493534\u003cbr\u003ebmi=0.039062152967186486\u003cbr\u003eSHAP=-8.790","None=181\u003cbr\u003es5=-0.025953110560258\u003cbr\u003ebmi=-0.04285156464775429\u003cbr\u003eSHAP=4.309","None=55\u003cbr\u003es5=-0.06649019536676071\u003cbr\u003ebmi=-0.049318437091039065\u003cbr\u003eSHAP=2.224","None=399\u003cbr\u003es5=0.03954249419232167\u003cbr\u003ebmi=0.022894971858974496\u003cbr\u003eSHAP=-11.922","None=30\u003cbr\u003es5=-0.02712902329694316\u003cbr\u003ebmi=0.04445121333659049\u003cbr\u003eSHAP=1.710","None=140\u003cbr\u003es5=-0.03324559264822791\u003cbr\u003ebmi=0.014272475267928093\u003cbr\u003eSHAP=4.158","None=341\u003cbr\u003es5=-0.024795429028792802\u003cbr\u003ebmi=0.05954058237092167\u003cbr\u003eSHAP=-1.622","None=209\u003cbr\u003es5=-0.011896851335695978\u003cbr\u003ebmi=-0.018061886948495892\u003cbr\u003eSHAP=1.363","None=436\u003cbr\u003es5=-0.061175799045152635\u003cbr\u003ebmi=-0.07410811479029747\u003cbr\u003eSHAP=2.589","None=132\u003cbr\u003es5=-0.012908683225401873\u003cbr\u003ebmi=-0.0212953231701383\u003cbr\u003eSHAP=1.663","None=407\u003cbr\u003es5=-0.04835926177554553\u003cbr\u003ebmi=0.09295275666122646\u003cbr\u003eSHAP=0.784","None=79\u003cbr\u003es5=-0.0683315470939731\u003cbr\u003ebmi=-0.03746250427835029\u003cbr\u003eSHAP=-0.166","None=39\u003cbr\u003es5=0.019196469166885697\u003cbr\u003ebmi=0.014272475267928093\u003cbr\u003eSHAP=-10.713","None=333\u003cbr\u003es5=0.02929655685872395\u003cbr\u003ebmi=-0.006205954135807083\u003cbr\u003eSHAP=4.858","None=311\u003cbr\u003es5=0.012551194864223063\u003cbr\u003ebmi=0.04013996504106731\u003cbr\u003eSHAP=-5.425","None=422\u003cbr\u003es5=0.04067282891595704\u003cbr\u003ebmi=0.07786338762689529\u003cbr\u003eSHAP=-10.039","None=75\u003cbr\u003es5=0.006206735447689297\u003cbr\u003ebmi=-0.03099563183506548\u003cbr\u003eSHAP=-0.536","None=157\u003cbr\u003es5=0.010226716198682649\u003cbr\u003ebmi=-0.033151255982827074\u003cbr\u003eSHAP=0.584","None=307\u003cbr\u003es5=0.02337141516224845\u003cbr\u003ebmi=-0.03099563183506548\u003cbr\u003eSHAP=4.499","None=370\u003cbr\u003es5=-0.061175799045152635\u003cbr\u003ebmi=-0.05794093368208547\u003cbr\u003eSHAP=2.209","None=70\u003cbr\u003es5=-0.06291687914365544\u003cbr\u003ebmi=-0.06979686649477428\u003cbr\u003eSHAP=3.123","None=227\u003cbr\u003es5=-0.03845971734112638\u003cbr\u003ebmi=-0.029917819761184662\u003cbr\u003eSHAP=3.401","None=284\u003cbr\u003es5=0.002861309289833047\u003cbr\u003ebmi=-0.022373135244019075\u003cbr\u003eSHAP=0.782","None=402\u003cbr\u003es5=0.015568459328120622\u003cbr\u003ebmi=-0.033151255982827074\u003cbr\u003eSHAP=-0.175","None=199\u003cbr\u003es5=0.0898970830097539\u003cbr\u003ebmi=-0.04500718879551588\u003cbr\u003eSHAP=1.324","None=82\u003cbr\u003es5=-0.07020936123162536\u003cbr\u003ebmi=-0.035306880130588664\u003cbr\u003eSHAP=1.283","None=77\u003cbr\u003es5=-0.07409260794346935\u003cbr\u003ebmi=-0.03638469220446948\u003cbr\u003eSHAP=-0.745","None=33\u003cbr\u003es5=-0.018113692315690322\u003cbr\u003ebmi=-0.050396249164919873\u003cbr\u003eSHAP=2.233","None=358\u003cbr\u003es5=-0.08237869071592514\u003cbr\u003ebmi=-0.08488623552910546\u003cbr\u003eSHAP=3.402","None=395\u003cbr\u003es5=0.031812463179073616\u003cbr\u003ebmi=0.0013387303813585058\u003cbr\u003eSHAP=4.465","None=411\u003cbr\u003es5=-0.05140387304727299\u003cbr\u003ebmi=0.05846277029704089\u003cbr\u003eSHAP=-0.263","None=131\u003cbr\u003es5=-0.04688253415273158\u003cbr\u003ebmi=-0.06979686649477428\u003cbr\u003eSHAP=2.489","None=11\u003cbr\u003es5=-0.09643494994048712\u003cbr\u003ebmi=0.0175059114895705\u003cbr\u003eSHAP=7.452","None=386\u003cbr\u003es5=-0.030747917533098208\u003cbr\u003ebmi=-0.040695940499992665\u003cbr\u003eSHAP=5.192","None=15\u003cbr\u003es5=0.036060333995316066\u003cbr\u003ebmi=-0.018061886948495892\u003cbr\u003eSHAP=3.926","None=104\u003cbr\u003es5=-0.061175799045152635\u003cbr\u003ebmi=0.06492964274032566\u003cbr\u003eSHAP=0.834","None=196\u003cbr\u003es5=-0.03324559264822791\u003cbr\u003ebmi=-0.04608500086939666\u003cbr\u003eSHAP=2.956","None=0\u003cbr\u003es5=0.019907486170462722\u003cbr\u003ebmi=0.061696206518683294\u003cbr\u003eSHAP=-8.077","None=19\u003cbr\u003es5=-0.00894339609006817\u003cbr\u003ebmi=-0.018061886948495892\u003cbr\u003eSHAP=3.015","None=286\u003cbr\u003es5=-0.019198449026275908\u003cbr\u003ebmi=-0.05470749746044306\u003cbr\u003eSHAP=1.683","None=320\u003cbr\u003es5=0.0330430695314185\u003cbr\u003ebmi=0.030439656376140087\u003cbr\u003eSHAP=-6.428","None=56\u003cbr\u003es5=0.033653814906286016\u003cbr\u003ebmi=0.04121777711494808\u003cbr\u003eSHAP=-13.708","None=244\u003cbr\u003es5=-0.04398377252276359\u003cbr\u003ebmi=0.05415152200151766\u003cbr\u003eSHAP=4.082","None=101\u003cbr\u003es5=-0.030747917533098208\u003cbr\u003ebmi=-0.04500718879551588\u003cbr\u003eSHAP=5.591","None=218\u003cbr\u003es5=0.007027139682585861\u003cbr\u003ebmi=-0.06548561819925106\u003cbr\u003eSHAP=0.441","None=291\u003cbr\u003es5=0.05803805188793539\u003cbr\u003ebmi=0.018583723563451313\u003cbr\u003eSHAP=-10.900","None=409\u003cbr\u003es5=0.030563625621508765\u003cbr\u003ebmi=-0.011595014505211082\u003cbr\u003eSHAP=5.356","None=388\u003cbr\u003es5=0.02671684132010462\u003cbr\u003ebmi=-0.02452875939178067\u003cbr\u003eSHAP=2.806","None=374\u003cbr\u003es5=-0.0006117353045626216\u003cbr\u003ebmi=-0.03422906805670789\u003cbr\u003eSHAP=2.869","None=25\u003cbr\u003es5=0.019196469166885697\u003cbr\u003ebmi=-0.012672826579091896\u003cbr\u003eSHAP=4.032","None=185\u003cbr\u003es5=0.06731773534487707\u003cbr\u003ebmi=-0.018061886948495892\u003cbr\u003eSHAP=6.811","None=203\u003cbr\u003es5=0.025395078941660074\u003cbr\u003ebmi=0.030439656376140087\u003cbr\u003eSHAP=-13.503","None=117\u003cbr\u003es5=0.07912244072477838\u003cbr\u003ebmi=-0.0212953231701383\u003cbr\u003eSHAP=5.039","None=42\u003cbr\u003es5=-0.009918765569334137\u003cbr\u003ebmi=-0.010517202431330305\u003cbr\u003eSHAP=0.324","None=296\u003cbr\u003es5=-0.05615310200706333\u003cbr\u003ebmi=-0.061174369903727877\u003cbr\u003eSHAP=1.736","None=423\u003cbr\u003es5=0.015568459328120622\u003cbr\u003ebmi=-0.039618128426111884\u003cbr\u003eSHAP=0.172","None=155\u003cbr\u003es5=0.037810529696428806\u003cbr\u003ebmi=0.06061839444480248\u003cbr\u003eSHAP=-8.512","None=440\u003cbr\u003es5=0.04452872881997113\u003cbr\u003ebmi=0.039062152967186486\u003cbr\u003eSHAP=-11.244","None=176\u003cbr\u003es5=-0.003300838074501491\u003cbr\u003ebmi=0.01966153563733209\u003cbr\u003eSHAP=1.574","None=285\u003cbr\u003es5=0.05987940361514779\u003cbr\u003ebmi=-0.020217511096257485\u003cbr\u003eSHAP=6.725","None=22\u003cbr\u003es5=-0.061175799045152635\u003cbr\u003ebmi=-0.004050329988045492\u003cbr\u003eSHAP=-1.985","None=46\u003cbr\u003es5=-0.007977142213412223\u003cbr\u003ebmi=-0.011595014505211082\u003cbr\u003eSHAP=1.772","None=93\u003cbr\u003es5=-0.03324559264822791\u003cbr\u003ebmi=-0.06440780612537028\u003cbr\u003eSHAP=2.122","None=433\u003cbr\u003es5=-0.05140387304727299\u003cbr\u003ebmi=-0.06009655782984706\u003cbr\u003eSHAP=2.286","None=255\u003cbr\u003es5=-0.003300838074501491\u003cbr\u003ebmi=-0.06548561819925106\u003cbr\u003eSHAP=0.907","None=90\u003cbr\u003es5=-0.07213275338232743\u003cbr\u003ebmi=-0.02560657146566148\u003cbr\u003eSHAP=0.563","None=57\u003cbr\u003es5=-0.05615310200706333\u003cbr\u003ebmi=-0.06332999405148947\u003cbr\u003eSHAP=1.743","None=391\u003cbr\u003es5=-0.08913335224990723\u003cbr\u003ebmi=-0.06979686649477428\u003cbr\u003eSHAP=1.893","None=24\u003cbr\u003es5=-0.025953110560258\u003cbr\u003ebmi=0.03582871674554409\u003cbr\u003eSHAP=1.664"],"x":[0.03243232415655107,-0.022516528376302174,0.08449153066204618,0.0986480615153178,-0.005142189801713891,-0.021395309255276825,0.033653814906286016,0.07419089971278872,0.024055085357995654,-0.030747917533098208,-0.025953110560258,0.04289703595278786,-0.09393727482535742,0.04666177983070229,-0.017056282412934727,-0.04542403773513769,0.07340695788833193,0.02929655685872395,-0.030747917533098208,0.02200407477075404,0.06773705306493534,-0.025953110560258,-0.06649019536676071,0.03954249419232167,-0.02712902329694316,-0.03324559264822791,-0.024795429028792802,-0.011896851335695978,-0.061175799045152635,-0.012908683225401873,-0.04835926177554553,-0.0683315470939731,0.019196469166885697,0.02929655685872395,0.012551194864223063,0.04067282891595704,0.006206735447689297,0.010226716198682649,0.02337141516224845,-0.061175799045152635,-0.06291687914365544,-0.03845971734112638,0.002861309289833047,0.015568459328120622,0.0898970830097539,-0.07020936123162536,-0.07409260794346935,-0.018113692315690322,-0.08237869071592514,0.031812463179073616,-0.05140387304727299,-0.04688253415273158,-0.09643494994048712,-0.030747917533098208,0.036060333995316066,-0.061175799045152635,-0.03324559264822791,0.019907486170462722,-0.00894339609006817,-0.019198449026275908,0.0330430695314185,0.033653814906286016,-0.04398377252276359,-0.030747917533098208,0.007027139682585861,0.05803805188793539,0.030563625621508765,0.02671684132010462,-0.0006117353045626216,0.019196469166885697,0.06731773534487707,0.025395078941660074,0.07912244072477838,-0.009918765569334137,-0.05615310200706333,0.015568459328120622,0.037810529696428806,0.04452872881997113,-0.003300838074501491,0.05987940361514779,-0.061175799045152635,-0.007977142213412223,-0.03324559264822791,-0.05140387304727299,-0.003300838074501491,-0.07213275338232743,-0.05615310200706333,-0.08913335224990723,-0.025953110560258],"y":[1.3249084414600363,1.5816545170909435,2.4375975170284487,-10.517586209266595,0.43700717579432086,4.2835070321285444,-13.204627974289998,-6.567947568405033,4.144588918211137,4.187800248859463,2.9231856197568833,2.253022234231514,0.8348090586969762,-13.405514037646142,3.4151420311632448,3.0923082299956106,-6.235845486391419,-10.969692360126741,-0.4929629418998128,-11.553016541728988,-8.789980937164364,4.309161132416554,2.224363178452582,-11.922350509505621,1.709802658179172,4.157599666546544,-1.6218550641988414,1.3630139484590456,2.5892080218301796,1.6634326990772066,0.7838788262547393,-0.16600126045516347,-10.712758481143714,4.858173579035362,-5.424708814358306,-10.038903444338374,-0.5364427026063513,0.5844629295920994,4.499271586303294,2.208873476507713,3.1230519220309128,3.4010070534194137,0.7816925023683816,-0.1745067073259941,1.324339067843376,1.283286730160593,-0.7449129906041886,2.2331923580318844,3.40192159758895,4.464823737238052,-0.26304156012093005,2.488534365503942,7.452029485843056,5.19202764004432,3.9255953912193795,0.8338802684533446,2.9558591615250642,-8.077116410255458,3.0153412359365857,1.6826688369869152,-6.427645921403906,-13.707951093634732,4.08176095733197,5.590656626292654,0.44101415334823957,-10.899578025590717,5.35567665404467,2.8063171152170407,2.869046968211952,4.031707242034326,6.811155806588962,-13.503161611478234,5.039059324471149,0.3241170313519332,1.7361919082567625,0.172323584033775,-8.51193351736571,-11.24448830458958,1.5736764601472035,6.724648905747537,-1.9853890133909433,1.7722522715901852,2.121636172004557,2.2863444313921746,0.9070451283026605,0.5630074148316666,1.7432285544974793,1.892648676466919,1.663842778917232],"type":"scattergl"}],                        {"hovermode":"closest","paper_bgcolor":"#fff","plot_bgcolor":"#fff","showlegend":false,"title":{"text":"Interaction plot for s5 and bmi"},"xaxis":{"title":{"text":"s5"}},"yaxis":{"title":{"text":"SHAP value"}},"template":{"data":{"scatter":[{"type":"scatter"}]}},"margin":{"t":40,"b":40,"l":40,"r":40}},                        {"responsive": true}                    )                };                            </script>        </div><div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.25.2.min.js"></script>                <div id="bc502618-d23c-466b-92c3-bc4bdaa8f934" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("bc502618-d23c-466b-92c3-bc4bdaa8f934")) {                    Plotly.newPlot(                        "bc502618-d23c-466b-92c3-bc4bdaa8f934",                        [{"hoverinfo":"text","marker":{"color":[0.03243232415655107,-0.022516528376302174,0.08449153066204618,0.0986480615153178,-0.005142189801713891,-0.021395309255276825,0.033653814906286016,0.07419089971278872,0.024055085357995654,-0.030747917533098208,-0.025953110560258,0.04289703595278786,-0.09393727482535742,0.04666177983070229,-0.017056282412934727,-0.04542403773513769,0.07340695788833193,0.02929655685872395,-0.030747917533098208,0.02200407477075404,0.06773705306493534,-0.025953110560258,-0.06649019536676071,0.03954249419232167,-0.02712902329694316,-0.03324559264822791,-0.024795429028792802,-0.011896851335695978,-0.061175799045152635,-0.012908683225401873,-0.04835926177554553,-0.0683315470939731,0.019196469166885697,0.02929655685872395,0.012551194864223063,0.04067282891595704,0.006206735447689297,0.010226716198682649,0.02337141516224845,-0.061175799045152635,-0.06291687914365544,-0.03845971734112638,0.002861309289833047,0.015568459328120622,0.0898970830097539,-0.07020936123162536,-0.07409260794346935,-0.018113692315690322,-0.08237869071592514,0.031812463179073616,-0.05140387304727299,-0.04688253415273158,-0.09643494994048712,-0.030747917533098208,0.036060333995316066,-0.061175799045152635,-0.03324559264822791,0.019907486170462722,-0.00894339609006817,-0.019198449026275908,0.0330430695314185,0.033653814906286016,-0.04398377252276359,-0.030747917533098208,0.007027139682585861,0.05803805188793539,0.030563625621508765,0.02671684132010462,-0.0006117353045626216,0.019196469166885697,0.06731773534487707,0.025395078941660074,0.07912244072477838,-0.009918765569334137,-0.05615310200706333,0.015568459328120622,0.037810529696428806,0.04452872881997113,-0.003300838074501491,0.05987940361514779,-0.061175799045152635,-0.007977142213412223,-0.03324559264822791,-0.05140387304727299,-0.003300838074501491,-0.07213275338232743,-0.05615310200706333,-0.08913335224990723,-0.025953110560258],"colorbar":{"title":{"text":"s5"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"opacity":0.6,"showscale":true,"size":7},"mode":"markers","text":["None=287\u003cbr\u003ebmi=-0.006205954135807083\u003cbr\u003es5=0.03243232415655107\u003cbr\u003eSHAP=1.325","None=211\u003cbr\u003ebmi=0.0369065288194249\u003cbr\u003es5=-0.022516528376302174\u003cbr\u003eSHAP=1.582","None=72\u003cbr\u003ebmi=-0.004050329988045492\u003cbr\u003es5=0.08449153066204618\u003cbr\u003eSHAP=2.438","None=321\u003cbr\u003ebmi=0.05199589785375607\u003cbr\u003es5=0.0986480615153178\u003cbr\u003eSHAP=-10.518","None=73\u003cbr\u003ebmi=-0.020217511096257485\u003cbr\u003es5=-0.005142189801713891\u003cbr\u003eSHAP=0.437","None=418\u003cbr\u003ebmi=-0.02452875939178067\u003cbr\u003es5=-0.021395309255276825\u003cbr\u003eSHAP=4.284","None=367\u003cbr\u003ebmi=0.17055522598064407\u003cbr\u003es5=0.033653814906286016\u003cbr\u003eSHAP=-13.205","None=354\u003cbr\u003ebmi=0.045529025410471304\u003cbr\u003es5=0.07419089971278872\u003cbr\u003eSHAP=-6.568","None=281\u003cbr\u003ebmi=-0.09027529589850945\u003cbr\u003es5=0.024055085357995654\u003cbr\u003eSHAP=4.145","None=148\u003cbr\u003ebmi=0.015350287341808908\u003cbr\u003es5=-0.030747917533098208\u003cbr\u003eSHAP=4.188","None=429\u003cbr\u003ebmi=-0.033151255982827074\u003cbr\u003es5=-0.025953110560258\u003cbr\u003eSHAP=2.923","None=78\u003cbr\u003ebmi=-0.05794093368208547\u003cbr\u003es5=0.04289703595278786\u003cbr\u003eSHAP=2.253","None=126\u003cbr\u003ebmi=-0.061174369903727877\u003cbr\u003es5=-0.09393727482535742\u003cbr\u003eSHAP=0.835","None=113\u003cbr\u003ebmi=0.014272475267928093\u003cbr\u003es5=0.04666177983070229\u003cbr\u003eSHAP=-13.406","None=329\u003cbr\u003ebmi=-0.05578530953432388\u003cbr\u003es5=-0.017056282412934727\u003cbr\u003eSHAP=3.415","None=427\u003cbr\u003ebmi=0.005649978676881689\u003cbr\u003es5=-0.04542403773513769\u003cbr\u003eSHAP=3.092","None=172\u003cbr\u003ebmi=0.07139651518361048\u003cbr\u003es5=0.07340695788833193\u003cbr\u003eSHAP=-6.236","None=268\u003cbr\u003ebmi=0.08864150836570328\u003cbr\u003es5=0.02929655685872395\u003cbr\u003eSHAP=-10.970","None=76\u003cbr\u003ebmi=0.028284032228378497\u003cbr\u003es5=-0.030747917533098208\u003cbr\u003eSHAP=-0.493","None=116\u003cbr\u003ebmi=0.05846277029704089\u003cbr\u003es5=0.02200407477075404\u003cbr\u003eSHAP=-11.553","None=9\u003cbr\u003ebmi=0.039062152967186486\u003cbr\u003es5=0.06773705306493534\u003cbr\u003eSHAP=-8.790","None=181\u003cbr\u003ebmi=-0.04285156464775429\u003cbr\u003es5=-0.025953110560258\u003cbr\u003eSHAP=4.309","None=55\u003cbr\u003ebmi=-0.049318437091039065\u003cbr\u003es5=-0.06649019536676071\u003cbr\u003eSHAP=2.224","None=399\u003cbr\u003ebmi=0.022894971858974496\u003cbr\u003es5=0.03954249419232167\u003cbr\u003eSHAP=-11.922","None=30\u003cbr\u003ebmi=0.04445121333659049\u003cbr\u003es5=-0.02712902329694316\u003cbr\u003eSHAP=1.710","None=140\u003cbr\u003ebmi=0.014272475267928093\u003cbr\u003es5=-0.03324559264822791\u003cbr\u003eSHAP=4.158","None=341\u003cbr\u003ebmi=0.05954058237092167\u003cbr\u003es5=-0.024795429028792802\u003cbr\u003eSHAP=-1.622","None=209\u003cbr\u003ebmi=-0.018061886948495892\u003cbr\u003es5=-0.011896851335695978\u003cbr\u003eSHAP=1.363","None=436\u003cbr\u003ebmi=-0.07410811479029747\u003cbr\u003es5=-0.061175799045152635\u003cbr\u003eSHAP=2.589","None=132\u003cbr\u003ebmi=-0.0212953231701383\u003cbr\u003es5=-0.012908683225401873\u003cbr\u003eSHAP=1.663","None=407\u003cbr\u003ebmi=0.09295275666122646\u003cbr\u003es5=-0.04835926177554553\u003cbr\u003eSHAP=0.784","None=79\u003cbr\u003ebmi=-0.03746250427835029\u003cbr\u003es5=-0.0683315470939731\u003cbr\u003eSHAP=-0.166","None=39\u003cbr\u003ebmi=0.014272475267928093\u003cbr\u003es5=0.019196469166885697\u003cbr\u003eSHAP=-10.713","None=333\u003cbr\u003ebmi=-0.006205954135807083\u003cbr\u003es5=0.02929655685872395\u003cbr\u003eSHAP=4.858","None=311\u003cbr\u003ebmi=0.04013996504106731\u003cbr\u003es5=0.012551194864223063\u003cbr\u003eSHAP=-5.425","None=422\u003cbr\u003ebmi=0.07786338762689529\u003cbr\u003es5=0.04067282891595704\u003cbr\u003eSHAP=-10.039","None=75\u003cbr\u003ebmi=-0.03099563183506548\u003cbr\u003es5=0.006206735447689297\u003cbr\u003eSHAP=-0.536","None=157\u003cbr\u003ebmi=-0.033151255982827074\u003cbr\u003es5=0.010226716198682649\u003cbr\u003eSHAP=0.584","None=307\u003cbr\u003ebmi=-0.03099563183506548\u003cbr\u003es5=0.02337141516224845\u003cbr\u003eSHAP=4.499","None=370\u003cbr\u003ebmi=-0.05794093368208547\u003cbr\u003es5=-0.061175799045152635\u003cbr\u003eSHAP=2.209","None=70\u003cbr\u003ebmi=-0.06979686649477428\u003cbr\u003es5=-0.06291687914365544\u003cbr\u003eSHAP=3.123","None=227\u003cbr\u003ebmi=-0.029917819761184662\u003cbr\u003es5=-0.03845971734112638\u003cbr\u003eSHAP=3.401","None=284\u003cbr\u003ebmi=-0.022373135244019075\u003cbr\u003es5=0.002861309289833047\u003cbr\u003eSHAP=0.782","None=402\u003cbr\u003ebmi=-0.033151255982827074\u003cbr\u003es5=0.015568459328120622\u003cbr\u003eSHAP=-0.175","None=199\u003cbr\u003ebmi=-0.04500718879551588\u003cbr\u003es5=0.0898970830097539\u003cbr\u003eSHAP=1.324","None=82\u003cbr\u003ebmi=-0.035306880130588664\u003cbr\u003es5=-0.07020936123162536\u003cbr\u003eSHAP=1.283","None=77\u003cbr\u003ebmi=-0.03638469220446948\u003cbr\u003es5=-0.07409260794346935\u003cbr\u003eSHAP=-0.745","None=33\u003cbr\u003ebmi=-0.050396249164919873\u003cbr\u003es5=-0.018113692315690322\u003cbr\u003eSHAP=2.233","None=358\u003cbr\u003ebmi=-0.08488623552910546\u003cbr\u003es5=-0.08237869071592514\u003cbr\u003eSHAP=3.402","None=395\u003cbr\u003ebmi=0.0013387303813585058\u003cbr\u003es5=0.031812463179073616\u003cbr\u003eSHAP=4.465","None=411\u003cbr\u003ebmi=0.05846277029704089\u003cbr\u003es5=-0.05140387304727299\u003cbr\u003eSHAP=-0.263","None=131\u003cbr\u003ebmi=-0.06979686649477428\u003cbr\u003es5=-0.04688253415273158\u003cbr\u003eSHAP=2.489","None=11\u003cbr\u003ebmi=0.0175059114895705\u003cbr\u003es5=-0.09643494994048712\u003cbr\u003eSHAP=7.452","None=386\u003cbr\u003ebmi=-0.040695940499992665\u003cbr\u003es5=-0.030747917533098208\u003cbr\u003eSHAP=5.192","None=15\u003cbr\u003ebmi=-0.018061886948495892\u003cbr\u003es5=0.036060333995316066\u003cbr\u003eSHAP=3.926","None=104\u003cbr\u003ebmi=0.06492964274032566\u003cbr\u003es5=-0.061175799045152635\u003cbr\u003eSHAP=0.834","None=196\u003cbr\u003ebmi=-0.04608500086939666\u003cbr\u003es5=-0.03324559264822791\u003cbr\u003eSHAP=2.956","None=0\u003cbr\u003ebmi=0.061696206518683294\u003cbr\u003es5=0.019907486170462722\u003cbr\u003eSHAP=-8.077","None=19\u003cbr\u003ebmi=-0.018061886948495892\u003cbr\u003es5=-0.00894339609006817\u003cbr\u003eSHAP=3.015","None=286\u003cbr\u003ebmi=-0.05470749746044306\u003cbr\u003es5=-0.019198449026275908\u003cbr\u003eSHAP=1.683","None=320\u003cbr\u003ebmi=0.030439656376140087\u003cbr\u003es5=0.0330430695314185\u003cbr\u003eSHAP=-6.428","None=56\u003cbr\u003ebmi=0.04121777711494808\u003cbr\u003es5=0.033653814906286016\u003cbr\u003eSHAP=-13.708","None=244\u003cbr\u003ebmi=0.05415152200151766\u003cbr\u003es5=-0.04398377252276359\u003cbr\u003eSHAP=4.082","None=101\u003cbr\u003ebmi=-0.04500718879551588\u003cbr\u003es5=-0.030747917533098208\u003cbr\u003eSHAP=5.591","None=218\u003cbr\u003ebmi=-0.06548561819925106\u003cbr\u003es5=0.007027139682585861\u003cbr\u003eSHAP=0.441","None=291\u003cbr\u003ebmi=0.018583723563451313\u003cbr\u003es5=0.05803805188793539\u003cbr\u003eSHAP=-10.900","None=409\u003cbr\u003ebmi=-0.011595014505211082\u003cbr\u003es5=0.030563625621508765\u003cbr\u003eSHAP=5.356","None=388\u003cbr\u003ebmi=-0.02452875939178067\u003cbr\u003es5=0.02671684132010462\u003cbr\u003eSHAP=2.806","None=374\u003cbr\u003ebmi=-0.03422906805670789\u003cbr\u003es5=-0.0006117353045626216\u003cbr\u003eSHAP=2.869","None=25\u003cbr\u003ebmi=-0.012672826579091896\u003cbr\u003es5=0.019196469166885697\u003cbr\u003eSHAP=4.032","None=185\u003cbr\u003ebmi=-0.018061886948495892\u003cbr\u003es5=0.06731773534487707\u003cbr\u003eSHAP=6.811","None=203\u003cbr\u003ebmi=0.030439656376140087\u003cbr\u003es5=0.025395078941660074\u003cbr\u003eSHAP=-13.503","None=117\u003cbr\u003ebmi=-0.0212953231701383\u003cbr\u003es5=0.07912244072477838\u003cbr\u003eSHAP=5.039","None=42\u003cbr\u003ebmi=-0.010517202431330305\u003cbr\u003es5=-0.009918765569334137\u003cbr\u003eSHAP=0.324","None=296\u003cbr\u003ebmi=-0.061174369903727877\u003cbr\u003es5=-0.05615310200706333\u003cbr\u003eSHAP=1.736","None=423\u003cbr\u003ebmi=-0.039618128426111884\u003cbr\u003es5=0.015568459328120622\u003cbr\u003eSHAP=0.172","None=155\u003cbr\u003ebmi=0.06061839444480248\u003cbr\u003es5=0.037810529696428806\u003cbr\u003eSHAP=-8.512","None=440\u003cbr\u003ebmi=0.039062152967186486\u003cbr\u003es5=0.04452872881997113\u003cbr\u003eSHAP=-11.244","None=176\u003cbr\u003ebmi=0.01966153563733209\u003cbr\u003es5=-0.003300838074501491\u003cbr\u003eSHAP=1.574","None=285\u003cbr\u003ebmi=-0.020217511096257485\u003cbr\u003es5=0.05987940361514779\u003cbr\u003eSHAP=6.725","None=22\u003cbr\u003ebmi=-0.004050329988045492\u003cbr\u003es5=-0.061175799045152635\u003cbr\u003eSHAP=-1.985","None=46\u003cbr\u003ebmi=-0.011595014505211082\u003cbr\u003es5=-0.007977142213412223\u003cbr\u003eSHAP=1.772","None=93\u003cbr\u003ebmi=-0.06440780612537028\u003cbr\u003es5=-0.03324559264822791\u003cbr\u003eSHAP=2.122","None=433\u003cbr\u003ebmi=-0.06009655782984706\u003cbr\u003es5=-0.05140387304727299\u003cbr\u003eSHAP=2.286","None=255\u003cbr\u003ebmi=-0.06548561819925106\u003cbr\u003es5=-0.003300838074501491\u003cbr\u003eSHAP=0.907","None=90\u003cbr\u003ebmi=-0.02560657146566148\u003cbr\u003es5=-0.07213275338232743\u003cbr\u003eSHAP=0.563","None=57\u003cbr\u003ebmi=-0.06332999405148947\u003cbr\u003es5=-0.05615310200706333\u003cbr\u003eSHAP=1.743","None=391\u003cbr\u003ebmi=-0.06979686649477428\u003cbr\u003es5=-0.08913335224990723\u003cbr\u003eSHAP=1.893","None=24\u003cbr\u003ebmi=0.03582871674554409\u003cbr\u003es5=-0.025953110560258\u003cbr\u003eSHAP=1.664"],"x":[-0.006205954135807083,0.0369065288194249,-0.004050329988045492,0.05199589785375607,-0.020217511096257485,-0.02452875939178067,0.17055522598064407,0.045529025410471304,-0.09027529589850945,0.015350287341808908,-0.033151255982827074,-0.05794093368208547,-0.061174369903727877,0.014272475267928093,-0.05578530953432388,0.005649978676881689,0.07139651518361048,0.08864150836570328,0.028284032228378497,0.05846277029704089,0.039062152967186486,-0.04285156464775429,-0.049318437091039065,0.022894971858974496,0.04445121333659049,0.014272475267928093,0.05954058237092167,-0.018061886948495892,-0.07410811479029747,-0.0212953231701383,0.09295275666122646,-0.03746250427835029,0.014272475267928093,-0.006205954135807083,0.04013996504106731,0.07786338762689529,-0.03099563183506548,-0.033151255982827074,-0.03099563183506548,-0.05794093368208547,-0.06979686649477428,-0.029917819761184662,-0.022373135244019075,-0.033151255982827074,-0.04500718879551588,-0.035306880130588664,-0.03638469220446948,-0.050396249164919873,-0.08488623552910546,0.0013387303813585058,0.05846277029704089,-0.06979686649477428,0.0175059114895705,-0.040695940499992665,-0.018061886948495892,0.06492964274032566,-0.04608500086939666,0.061696206518683294,-0.018061886948495892,-0.05470749746044306,0.030439656376140087,0.04121777711494808,0.05415152200151766,-0.04500718879551588,-0.06548561819925106,0.018583723563451313,-0.011595014505211082,-0.02452875939178067,-0.03422906805670789,-0.012672826579091896,-0.018061886948495892,0.030439656376140087,-0.0212953231701383,-0.010517202431330305,-0.061174369903727877,-0.039618128426111884,0.06061839444480248,0.039062152967186486,0.01966153563733209,-0.020217511096257485,-0.004050329988045492,-0.011595014505211082,-0.06440780612537028,-0.06009655782984706,-0.06548561819925106,-0.02560657146566148,-0.06332999405148947,-0.06979686649477428,0.03582871674554409],"y":[1.3249084414600345,1.5816545170909446,2.437597517028453,-10.517586209266602,0.43700717579432186,4.283507032128545,-13.204627974289984,-6.567947568405033,4.144588918211138,4.187800248859465,2.923185619756881,2.2530222342315183,0.8348090586969722,-13.405514037646146,3.4151420311632426,3.0923082299956084,-6.235845486391422,-10.969692360126732,-0.49296294189981477,-11.553016541728987,-8.789980937164366,4.309161132416549,2.224363178452582,-11.92235050950562,1.7098026581791768,4.1575996665465444,-1.62185506419884,1.363013948459047,2.5892080218301774,1.6634326990772084,0.7838788262547278,-0.1660012604551641,-10.71275848114371,4.858173579035365,-5.424708814358307,-10.038903444338372,-0.5364427026063507,0.5844629295920999,4.4992715863033,2.2088734765077125,3.123051922030912,3.4010070534194137,0.7816925023683842,-0.17450670732599352,1.324339067843375,1.283286730160593,-0.7449129906041901,2.2331923580318813,3.401921597588947,4.464823737238051,-0.2630415601209313,2.488534365503942,7.452029485843052,5.19202764004432,3.9255953912193804,0.8338802684533413,2.955859161525062,-8.077116410255451,3.015341235936585,1.6826688369869132,-6.427645921403908,-13.707951093634733,4.081760957331971,5.590656626292656,0.4410141533482382,-10.899578025590719,5.355676654044676,2.806317115217041,2.8690469682119546,4.031707242034325,6.811155806588963,-13.503161611478232,5.0390593244711575,0.32411703135193465,1.7361919082567618,0.17232358403377657,-8.511933517365716,-11.244488304589577,1.5736764601472062,6.724648905747537,-1.9853890133909409,1.772252271590181,2.121636172004555,2.2863444313921732,0.9070451283026598,0.5630074148316658,1.7432285544974793,1.8926486764669161,1.663842778917231],"type":"scattergl"}],                        {"hovermode":"closest","paper_bgcolor":"#fff","plot_bgcolor":"#fff","showlegend":false,"title":{"text":"Interaction plot for bmi and s5"},"xaxis":{"title":{"text":"bmi"}},"yaxis":{"title":{"text":"SHAP value"}},"template":{"data":{"scatter":[{"type":"scatter"}]}},"margin":{"t":40,"b":40,"l":40,"r":40}},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+</div> 
+    
+</div>
+        
+</div> 
+    
+    </div>
+</div>
+    
+</div>
+
+<div class="tab-pane " id="myTab6"
+     role="tabpanel" aria-labelledby="myTab6-tab"> <div><H1>Decision Trees</H1></div>
+<div>
+    <div>
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="row row-cols-1 g-4" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Select Index</h3></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+Selected index: <b>None</b>
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+</div> 
+    
+</div>
+        
+</div> 
+        </div><div>
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="row row-cols-1 g-4" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Decision Trees</h3><h6 class="card-subtitle">Displaying individual decision trees inside Random Forest</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+no index selected
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+</div> 
+    
+</div>
+        
+</div> 
+        </div><div>
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="row row-cols-1 g-4" style="margin-top: 20px;">
+    
+<div class="col">
+
+<div class="card h-100" >
+  <div class="card-header"><h3 class="card-title">Decision path table</h3><h6 class="card-subtitle">Decision path through decision tree</h6></div>
+  <div class="card-body">
+    <div class="w-100">
+    
+<div class="row" style="margin-top: 20px;">
+    
+<div class="col">
+no tree selected
+</div>
+        
+</div> 
+    
+    </div>
+  </div>
+</div>
+
+</div>
+        
+</div> 
+    
+</div>
+        
+</div> 
+    
+    </div>
+</div>
+    
+</div>
+
+</div>
+<script type="text/javascript">
+var triggerTabList = [].slice.call(document.querySelectorAll('#myTab button'))
+triggerTabList.forEach(function (triggerEl) {
+  var tabTrigger = new bootstrap.Tab(triggerEl)
+
+  triggerEl.addEventListener('click', function (event) {
+    event.preventDefault()
+    tabTrigger.show()
+    window.dispatchEvent(new Event('resize'));
+  })
+})
+</script>
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+window.dispatchEvent(new Event('resize'));
+</script>
+        
+</html>
+    
